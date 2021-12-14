@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='001-注释'/>
+        <page name='002-数据类型'/>
+        <page name='003-类型转换'/>
+        <page name='004-元组'/>
+        <page name='005-流程控制'/>
+        <page name='006-区间运算符'/>
+        <page name='007-switch'/>
+        <page name='008-函数定义'/>
+    </pages>
+</playground>
