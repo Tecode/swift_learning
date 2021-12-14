@@ -44,6 +44,19 @@ func defaultValue(a: Int = 2, b: String = "haoxuan", c: Double = 3.4) {
     print("\(b)-\(a)-\(c)")
 }
 
+// 可变参数
+func dynamicParams(_ numbers: Int..., name: String = "default", _ other: String) {
+    print("\(numbers)<<\(name)<<\(other)")
+}
+
+// 函数内部修改值
+var number1 = 10
+func add(_ value: inout Int) {
+    value = 20
+}
+add(&number1)
+print("number1 &=\(number1)")
+
 pi()
 sum(x:1, y: 3)
 sayHello()
@@ -53,5 +66,6 @@ getToWork(at: "20:00")
 array2(1,3)
 defaultValue()
 defaultValue(b:"姐姐")
+dynamicParams(12,23,34,name: "haoxuan", "JIEJIE")
 
 
