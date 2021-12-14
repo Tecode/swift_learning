@@ -9,5 +9,7 @@
         <page name='006-区间运算符'/>
         <page name='007-switch'/>
         <page name='008-函数定义'/>
+        <page name='009-函数重载'/>
+        <page name='010-函数类型'/>
     </pages>
 </playground>
