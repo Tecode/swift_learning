@@ -8,5 +8,9 @@
         <page name='005-强制解包'/>
         <page name='006-等价写法'/>
         <page name='007-空合并运算符'/>
+        <page name='008-guard'/>
+        <page name='009-隐式解包'/>
+        <page name='010-字符串插值'/>
+        <page name='011-多重可选项'/>
     </pages>
 </playground>

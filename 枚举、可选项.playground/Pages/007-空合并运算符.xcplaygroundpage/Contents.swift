@@ -17,3 +17,19 @@ let a4: Int? = 10
 let a5: Int = 3
 let d = a4 ?? a5
 print(d) // 10
+
+
+// ?? 跟if let 配合使用
+let a6: Int? = nil
+let b3: Int? = 20
+
+// 类似 if a != nil && b != nil
+if let c = a6 ?? b3 {
+    print(c)
+}
+
+// 类似 if a != nil && b != nil
+if let c = a6, let c2 = b3 {
+    print(c)
+    print(c2)
+}
