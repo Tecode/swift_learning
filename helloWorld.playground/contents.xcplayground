@@ -11,5 +11,7 @@
         <page name='008-函数定义'/>
         <page name='009-函数重载'/>
         <page name='010-函数类型'/>
+        <page name='010-类型别名'/>
+        <page name='011-嵌套函数'/>
     </pages>
 </playground>

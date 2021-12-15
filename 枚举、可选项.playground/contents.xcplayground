@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' buildActiveScheme='true' importAppTypes='true'>
+    <pages>
+        <page name='001-@inline'/>
+        <page name='002-枚举、关联值'/>
+        <page name='003-memoryLayout'/>
+        <page name='004-可选项'/>
+        <page name='005-强制解包'/>
+        <page name='006-等价写法'/>
+        <page name='007-空合并运算符'/>
+    </pages>
+</playground>

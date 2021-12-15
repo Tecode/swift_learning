@@ -24,7 +24,7 @@ func sum2 (x: Int, y: Int)-> Int {
 ///  - Returns b: 第二个参数
 ///
 func array(a: Int, b: Int) -> (sum: Int, avg: Int) {
-    var sum3 = a + b
+    let sum3 = a + b
     return (sum3, sum3 >> 1)
 }
 
@@ -35,7 +35,7 @@ func getToWork(at time: String) {
 
 // 省略参数标签
 func array2(_ a: Int, _ b: Int) -> (sum: Int, avg: Int) {
-    var sum3 = a + b
+    let sum3 = a + b
     return (sum3, sum3 >> 1)
 }
 
