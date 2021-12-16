@@ -2,6 +2,7 @@ var name = "10"
 
 MemoryLayout<Int>.size       // 8
 MemoryLayout<Int>.stride     // 8
+MemoryLayout<Bool>.stride    // 1
 MemoryLayout<String>.size    // 16
 // 内存对齐
 MemoryLayout<Int>.alignment  // 8
