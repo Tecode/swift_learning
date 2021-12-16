@@ -5,19 +5,31 @@
 //  Created by 昊轩 on 2021/12/16.
 //
 
-enum TestMemory: Int {
-    case value1 = 1, value2, value3, value4
+enum SwitchEnum {
+    case value1,value2,value3
 }
 
-var value = TestMemory.value1
-value = .value2
-value = .value3
-print(Mems.ptr(ofVal: &value))
-print(value)
+var value = SwitchEnum.value3
 
-print(MemoryLayout<TestMemory>.size)
-print(MemoryLayout<TestMemory>.stride)
-print(MemoryLayout<TestMemory>.alignment)
+switch value {
+case .value1:
+    print("value1")
+case .value2:
+    print("value2")
+case .value3:
+    print("value3")
+}
+
+// si ni 汇编级别的调试
+// s n 源码级别的调试
+
+func test() {
+    var a: Int
+    a = 3
+    print(a)
+}
+
+test()
 
 enum TestMemory002 {
     case value1(Int, Int, Int)
@@ -26,44 +38,15 @@ enum TestMemory002 {
     case value4(Bool)
     case value5
 }
-// 1字节存储成员值
-// N字节存储关联值（N取占用内存最大的关联值），任何一个case的关联值共用N个字节
-// 共用体
-print(Mems.ptr(ofVal: &value001))
-var value001 = TestMemory002.value1(1,2,3)
-// 小端：高高低低
-// 00 00 00 00 00 00 00 01
-// 00 00 00 00 00 00 00 02
-// 00 00 00 00 00 00 00 03
-// 00
-// 00 00 00 00 00 00 00
-value001 = .value2(4,5)
-print(Mems.memStr(ofVal: &value001))
-// 0x0000000000000004 0x0000000000000005 0x0000000000000000 0x0000000000000001
-// 04 00 00 00 00 00 00 00
-// 05 00 00 00 00 00 00 00
-// 00 00 00 00 00 00 00 00
-// 01
-// 00 00 00 00 00 00 00
-value001 = .value3(6)
-// 06 00 00 00 00 00 00 00
-// 00 00 00 00 00 00 00 00
-// 00 00 00 00 00 00 00 00
-// 02
-// 00 00 00 00 00 00
-value001 = .value4(true)
-// 01 00 00 00 00 00 00 00
-// 00 00 00 00 00 00 00 00
-// 00 00 00 00 00 00 00 00
-// 03
-// 00 00 00 00 00 00 00
-value001 = .value5
-// 00 00 00 00 00 00 00 00
-// 00 00 00 00 00 00 00 00
-// 00 00 00 00 00 00 00 00
-// 04
-// 00 00 00 00 00 00 00
 
-print(MemoryLayout<TestMemory002>.size)
-print(MemoryLayout<TestMemory002>.stride)
-print(MemoryLayout<TestMemory002>.alignment)
+var b = TestMemory002.value1(10, 20, 30)
+
+/**
+ 0x100001444 <+656>: mov    w9, #0x2
+->  0x100001448 <+660>: str    x9, [x10, #0x228]
+ 0x10000144c <+664>: str    x9, [x8, #0x8]
+ 0x100001450 <+668>: mov    w9, #0x3
+ 0x100001454 <+672>: str    x9, [x8, #0x10]
+ 0x100001458 <+676>: strb   wzr, [x8, #0x18]
+ 0x10000145c <+680>: mov    w0, #0x0
+ */
