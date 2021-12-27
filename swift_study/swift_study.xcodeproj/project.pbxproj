@@ -7,9 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B68E531F276AE59E00555B48 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E531E276AE59E00555B48 /* main.swift */; };
-		B68E5326276B116900555B48 /* memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E5325276B116900555B48 /* memory.swift */; };
-		B68E5328276B3B5400555B48 /* enumMemory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E5327276B3B5400555B48 /* enumMemory.swift */; };
+		B6B2A5902779ECC2004C1C07 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E531E276AE59E00555B48 /* main.swift */; };
+		B6B2A5932779F54F004C1C07 /* memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E5325276B116900555B48 /* memory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,7 +27,9 @@
 		B68E531B276AE59E00555B48 /* swift_study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_study; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68E531E276AE59E00555B48 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B68E5325276B116900555B48 /* memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory.swift; sourceTree = "<group>"; };
-		B68E5327276B3B5400555B48 /* enumMemory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = enumMemory.swift; sourceTree = "<group>"; };
+		B68E5327276B3B5400555B48 /* 枚举内存地址.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "枚举内存地址.swift"; sourceTree = "<group>"; };
+		B6B2A58E2779EC26004C1C07 /* 枚举.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "枚举.swift"; sourceTree = "<group>"; };
+		B6B2A5912779EFD0004C1C07 /* 结构体和类.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "结构体和类.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +64,9 @@
 			children = (
 				B68E531E276AE59E00555B48 /* main.swift */,
 				B68E5325276B116900555B48 /* memory.swift */,
-				B68E5327276B3B5400555B48 /* enumMemory.swift */,
+				B68E5327276B3B5400555B48 /* 枚举内存地址.swift */,
+				B6B2A58E2779EC26004C1C07 /* 枚举.swift */,
+				B6B2A5912779EFD0004C1C07 /* 结构体和类.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
@@ -126,9 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B68E531F276AE59E00555B48 /* main.swift in Sources */,
-				B68E5326276B116900555B48 /* memory.swift in Sources */,
-				B68E5328276B3B5400555B48 /* enumMemory.swift in Sources */,
+				B6B2A5932779F54F004C1C07 /* memory.swift in Sources */,
+				B6B2A5902779ECC2004C1C07 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

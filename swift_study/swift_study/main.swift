@@ -5,48 +5,60 @@
 //  Created by 昊轩 on 2021/12/16.
 //
 
-enum SwitchEnum {
-    case value1,value2,value3
+// 指针类型8
+class Point{
+    var a : Int?
+    var b : Int?
+    init(){
+        a = 4
+        b = 6
+    }
 }
 
-var value = SwitchEnum.value3
+var point = Point()
+print(point.a!)
+print(MemoryLayout.stride(ofValue: point)) // 8
+print(MemoryLayout.size(ofValue: point))   // 8
 
-switch value {
-case .value1:
-    print("value1")
-case .value2:
-    print("value2")
-case .value3:
-    print("value3")
+// 值类型8x2=16
+struct Point002 {
+    var a: Int = 1
+    var b: Int = 2
 }
 
-// si ni 汇编级别的调试
-// s n 源码级别的调试
+var point002 = Point002()
+print(MemoryLayout.stride(ofValue: point002)) // 16
+print(MemoryLayout.size(ofValue: point002))   // 16
 
-func test() {
-    var a: Int
-    a = 3
-    print(a)
+print("point变量地址",Mems.ptr(ofVal: &point))
+print("point内存地址",Mems.memStr(ofVal: &point))
+print("--------------------")
+print("point002变量地址",Mems.ptr(ofVal: &point002))
+print("point002变量地址",Mems.memStr(ofVal: &point002))
+
+//point变量地址 0x000000010000c970
+//point内存地址 0x000000010063bee0
+//--------------------
+//point002变量地址 0x000000010000c978
+//point002变量地址 0x0000000000000001 0x0000000000000002
+
+class Point003{
+    var a : String?
+    var b : String?
+    var c : Int?
+    init(){
+        a = "haoxuan"
+    }
 }
 
-test()
+// 指针类型
+var point003 = Point003()
+print(MemoryLayout.stride(ofValue: point003)) // 8
+print(MemoryLayout.size(ofValue: point003))   // 8
 
-enum TestMemory002 {
-    case value1(Int, Int, Int)
-    case value2(Int,Int)
-    case value3(Int)
-    case value4(Bool)
-    case value5
-}
-
-var b = TestMemory002.value1(10, 20, 30)
-
-/**
- 0x100001444 <+656>: mov    w9, #0x2
-->  0x100001448 <+660>: str    x9, [x10, #0x228]
- 0x10000144c <+664>: str    x9, [x8, #0x8]
- 0x100001450 <+668>: mov    w9, #0x3
- 0x100001454 <+672>: str    x9, [x8, #0x10]
- 0x100001458 <+676>: strb   wzr, [x8, #0x18]
- 0x10000145c <+680>: mov    w0, #0x0
- */
+print("point003引用类型占用内存",Mems.size(ofRef: point003))
+print("point引用类型占用内存",Mems.size(ofRef: point))
+// point003引用类型占用内存 64
+// point引用类型占用内存 48
+// 结构体和类都可以定义方法
+// 结构体是值类型（枚举也是值类型），类是引用类型（指针类型）
