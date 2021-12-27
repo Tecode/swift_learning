@@ -31,6 +31,7 @@
 		B6B2A58E2779EC26004C1C07 /* 枚举.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "枚举.swift"; sourceTree = "<group>"; };
 		B6B2A5912779EFD0004C1C07 /* 结构体和类.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "结构体和类.swift"; sourceTree = "<group>"; };
 		B6B2A5942779FDCB004C1C07 /* 值类型的赋值操作.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "值类型的赋值操作.swift"; sourceTree = "<group>"; };
+		B6B2A596277A00DC004C1C07 /* 引用类型赋值操作.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "引用类型赋值操作.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,7 @@
 				B6B2A58E2779EC26004C1C07 /* 枚举.swift */,
 				B6B2A5912779EFD0004C1C07 /* 结构体和类.swift */,
 				B6B2A5942779FDCB004C1C07 /* 值类型的赋值操作.swift */,
+				B6B2A596277A00DC004C1C07 /* 引用类型赋值操作.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
