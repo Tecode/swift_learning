@@ -4,7 +4,6 @@
 //
 //  Created by 昊轩 on 2021/12/16.
 //
-func enumMemory() ->Void {
     enum TestMemory: Int {
         case value1 = 1, value2, value3, value4
     }
@@ -68,4 +67,4 @@ func enumMemory() ->Void {
     print(MemoryLayout<TestMemory002>.stride)
     print(MemoryLayout<TestMemory002>.alignment)
 
-}
+
