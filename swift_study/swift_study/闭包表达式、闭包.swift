@@ -51,6 +51,7 @@ func functoin001() -> FnType {
         count += value
         return count
     }
+//    返回的时候会开辟新的堆空间
     return function002
 }
 
