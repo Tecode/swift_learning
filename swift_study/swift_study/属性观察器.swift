@@ -10,6 +10,7 @@ import Foundation
 struct DriverCar {
     init () {
         print("初始化...")
+//        里面是不会触发的
         self.speed = 10
     }
     var speed: Int {

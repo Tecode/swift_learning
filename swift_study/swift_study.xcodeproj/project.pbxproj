@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6B2A5902779ECC2004C1C07 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E531E276AE59E00555B48 /* main.swift */; };
+		B67BD54E278DBD7D00C4287A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E531E276AE59E00555B48 /* main.swift */; };
 		B6B2A5932779F54F004C1C07 /* memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E5325276B116900555B48 /* memory.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +25,8 @@
 
 /* Begin PBXFileReference section */
 		B60A352B277B33B0000C27F4 /* 闭包表达式、闭包.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "闭包表达式、闭包.swift"; sourceTree = "<group>"; };
+		B67BD54C278DBD3900C4287A /* 延迟存储属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "延迟存储属性.swift"; sourceTree = "<group>"; };
+		B67BD54F278DC0D300C4287A /* 属性观察器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "属性观察器.swift"; sourceTree = "<group>"; };
 		B68E531B276AE59E00555B48 /* swift_study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_study; sourceTree = BUILT_PRODUCTS_DIR; };
 		B68E531E276AE59E00555B48 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B68E5325276B116900555B48 /* memory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = memory.swift; sourceTree = "<group>"; };
@@ -35,6 +37,8 @@
 		B6B2A5942779FDCB004C1C07 /* 值类型的赋值操作.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "值类型的赋值操作.swift"; sourceTree = "<group>"; };
 		B6B2A596277A00DC004C1C07 /* 引用类型赋值操作.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "引用类型赋值操作.swift"; sourceTree = "<group>"; };
 		B6B2A598277A0420004C1C07 /* 值类型引用类型的let.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "值类型引用类型的let.swift"; sourceTree = "<group>"; };
+		B6B9749D27A669C600E2850F /* 修改值类型属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "修改值类型属性.swift"; sourceTree = "<group>"; };
+		B6B9749F27A682E200E2850F /* 下标.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "下标.swift"; sourceTree = "<group>"; };
 		B6CBC2C32785D6BB00EEF451 /* 汇编分析闭包本质.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "汇编分析闭包本质.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +83,10 @@
 				B60A352B277B33B0000C27F4 /* 闭包表达式、闭包.swift */,
 				B6CBC2C32785D6BB00EEF451 /* 汇编分析闭包本质.swift */,
 				B6947BCF2787207A004095EB /* 属性、汇编分析inout本质.swift */,
+				B67BD54C278DBD3900C4287A /* 延迟存储属性.swift */,
+				B67BD54F278DC0D300C4287A /* 属性观察器.swift */,
+				B6B9749D27A669C600E2850F /* 修改值类型属性.swift */,
+				B6B9749F27A682E200E2850F /* 下标.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
@@ -141,8 +149,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B67BD54E278DBD7D00C4287A /* main.swift in Sources */,
 				B6B2A5932779F54F004C1C07 /* memory.swift in Sources */,
-				B6B2A5902779ECC2004C1C07 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
