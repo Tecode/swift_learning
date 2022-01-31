@@ -39,6 +39,8 @@
 		B6B2A598277A0420004C1C07 /* 值类型引用类型的let.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "值类型引用类型的let.swift"; sourceTree = "<group>"; };
 		B6B9749D27A669C600E2850F /* 修改值类型属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "修改值类型属性.swift"; sourceTree = "<group>"; };
 		B6B9749F27A682E200E2850F /* 下标.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "下标.swift"; sourceTree = "<group>"; };
+		B6B974A127A690DC00E2850F /* 继承.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "继承.swift"; sourceTree = "<group>"; };
+		B6B974A327A6F2A700E2850F /* 重写实例属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "重写实例属性.swift"; sourceTree = "<group>"; };
 		B6CBC2C32785D6BB00EEF451 /* 汇编分析闭包本质.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "汇编分析闭包本质.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -87,6 +89,8 @@
 				B67BD54F278DC0D300C4287A /* 属性观察器.swift */,
 				B6B9749D27A669C600E2850F /* 修改值类型属性.swift */,
 				B6B9749F27A682E200E2850F /* 下标.swift */,
+				B6B974A127A690DC00E2850F /* 继承.swift */,
+				B6B974A327A6F2A700E2850F /* 重写实例属性.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
