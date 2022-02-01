@@ -42,6 +42,10 @@
 		B6B974A127A690DC00E2850F /* 继承.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "继承.swift"; sourceTree = "<group>"; };
 		B6B974A327A6F2A700E2850F /* 重写实例属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "重写实例属性.swift"; sourceTree = "<group>"; };
 		B6CBC2C32785D6BB00EEF451 /* 汇编分析闭包本质.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "汇编分析闭包本质.swift"; sourceTree = "<group>"; };
+		B6DC538E27A9229E00CB8BE5 /* 初始化器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "初始化器.swift"; sourceTree = "<group>"; };
+		B6DC539027A976A800CB8BE5 /* require、deinit、可失败初始化器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "require、deinit、可失败初始化器.swift"; sourceTree = "<group>"; };
+		B6DC539227A97DBD00CB8BE5 /* 可选链.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "可选链.swift"; sourceTree = "<group>"; };
+		B6DC539427A9800400CB8BE5 /* 协议.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "协议.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +95,10 @@
 				B6B9749F27A682E200E2850F /* 下标.swift */,
 				B6B974A127A690DC00E2850F /* 继承.swift */,
 				B6B974A327A6F2A700E2850F /* 重写实例属性.swift */,
+				B6DC538E27A9229E00CB8BE5 /* 初始化器.swift */,
+				B6DC539027A976A800CB8BE5 /* require、deinit、可失败初始化器.swift */,
+				B6DC539227A97DBD00CB8BE5 /* 可选链.swift */,
+				B6DC539427A9800400CB8BE5 /* 协议.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
