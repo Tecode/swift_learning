@@ -28,6 +28,7 @@
 		B615BD9C27AA85750085CFF1 /* 自定义错误、捕获错误.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "自定义错误、捕获错误.swift"; sourceTree = "<group>"; };
 		B615BD9E27AA8C520085CFF1 /* 范型.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "范型.swift"; sourceTree = "<group>"; };
 		B615BDA027AACFDF0085CFF1 /* 类型约束.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "类型约束.swift"; sourceTree = "<group>"; };
+		B615BDA227AAE22E0085CFF1 /* String、Array汇编分析.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String、Array汇编分析.swift"; sourceTree = "<group>"; };
 		B67BD54C278DBD3900C4287A /* 延迟存储属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "延迟存储属性.swift"; sourceTree = "<group>"; };
 		B67BD54F278DC0D300C4287A /* 属性观察器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "属性观察器.swift"; sourceTree = "<group>"; };
 		B68E531B276AE59E00555B48 /* swift_study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_study; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,7 @@
 		B6B9749F27A682E200E2850F /* 下标.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "下标.swift"; sourceTree = "<group>"; };
 		B6B974A127A690DC00E2850F /* 继承.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "继承.swift"; sourceTree = "<group>"; };
 		B6B974A327A6F2A700E2850F /* 重写实例属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "重写实例属性.swift"; sourceTree = "<group>"; };
+		B6C7AB8927AD7D6500BABDA0 /* 可选项本质.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "可选项本质.swift"; sourceTree = "<group>"; };
 		B6CBC2C32785D6BB00EEF451 /* 汇编分析闭包本质.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "汇编分析闭包本质.swift"; sourceTree = "<group>"; };
 		B6DC538E27A9229E00CB8BE5 /* 初始化器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "初始化器.swift"; sourceTree = "<group>"; };
 		B6DC539027A976A800CB8BE5 /* require、deinit、可失败初始化器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "require、deinit、可失败初始化器.swift"; sourceTree = "<group>"; };
@@ -105,6 +107,8 @@
 				B615BD9C27AA85750085CFF1 /* 自定义错误、捕获错误.swift */,
 				B615BD9E27AA8C520085CFF1 /* 范型.swift */,
 				B615BDA027AACFDF0085CFF1 /* 类型约束.swift */,
+				B615BDA227AAE22E0085CFF1 /* String、Array汇编分析.swift */,
+				B6C7AB8927AD7D6500BABDA0 /* 可选项本质.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
