@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B662F1B127AE757300E283AF /* getter\setter、协议访问控制.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662F1B027AE757300E283AF /* getter\setter、协议访问控制.swift */; };
+		B662F1B327AED37D00E283AF /* 内存管理.swift in Sources */ = {isa = PBXBuildFile; fileRef = B662F1B227AED37D00E283AF /* 内存管理.swift */; };
 		B67BD54E278DBD7D00C4287A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E531E276AE59E00555B48 /* main.swift */; };
 		B6B2A5932779F54F004C1C07 /* memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E5325276B116900555B48 /* memory.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		B615BDA027AACFDF0085CFF1 /* 类型约束.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "类型约束.swift"; sourceTree = "<group>"; };
 		B615BDA227AAE22E0085CFF1 /* String、Array汇编分析.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String、Array汇编分析.swift"; sourceTree = "<group>"; };
 		B662F1AE27AE618100E283AF /* 扩展、协议扩展.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "扩展、协议扩展.swift"; sourceTree = "<group>"; };
+		B662F1B027AE757300E283AF /* getter\setter、协议访问控制.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "getter\\setter、协议访问控制.swift"; sourceTree = "<group>"; };
+		B662F1B227AED37D00E283AF /* 内存管理.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "内存管理.swift"; sourceTree = "<group>"; };
 		B67BD54C278DBD3900C4287A /* 延迟存储属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "延迟存储属性.swift"; sourceTree = "<group>"; };
 		B67BD54F278DC0D300C4287A /* 属性观察器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "属性观察器.swift"; sourceTree = "<group>"; };
 		B68E531B276AE59E00555B48 /* swift_study */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_study; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +119,8 @@
 				B6C7AB8B27AD854200BABDA0 /* 溢出运算符.swift */,
 				B6C7AB8D27AD85C500BABDA0 /* 运算符重载.swift */,
 				B662F1AE27AE618100E283AF /* 扩展、协议扩展.swift */,
+				B662F1B027AE757300E283AF /* getter\setter、协议访问控制.swift */,
+				B662F1B227AED37D00E283AF /* 内存管理.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
@@ -178,7 +184,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B67BD54E278DBD7D00C4287A /* main.swift in Sources */,
+				B662F1B327AED37D00E283AF /* 内存管理.swift in Sources */,
 				B6B2A5932779F54F004C1C07 /* memory.swift in Sources */,
+				B662F1B127AE757300E283AF /* getter\setter、协议访问控制.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				OTHER_SWIFT_FLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
