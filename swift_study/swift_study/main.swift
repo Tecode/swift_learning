@@ -6,17 +6,3 @@
 //
 
 
-var name: String? = "haoxuan"
-name = nil
-
-switch name {
-case let .some(v):
-    print(v)
-case .none:
-    print("nil")
-}
-
-// 等价于
-var name2: Optional<String> = Optional<String>.some("haoxuan")
-name2 = .none
-//print(name2!)
