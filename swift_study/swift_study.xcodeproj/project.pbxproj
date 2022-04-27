@@ -25,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		B60653F5281281B8004C1895 /* 字面量协议、模式匹配、条件编译.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "字面量协议、模式匹配、条件编译.swift"; sourceTree = "<group>"; };
+		B60653F72812B34B004C1895 /* OC到Swift、函数式编程.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OC到Swift、函数式编程.swift"; sourceTree = "<group>"; };
 		B6068A5427B3F6ED0075A23E /* 逃逸闭包、非逃逸闭包.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "逃逸闭包、非逃逸闭包.swift"; sourceTree = "<group>"; };
 		B60A352B277B33B0000C27F4 /* 闭包表达式、闭包.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "闭包表达式、闭包.swift"; sourceTree = "<group>"; };
 		B615BD9C27AA85750085CFF1 /* 自定义错误、捕获错误.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "自定义错误、捕获错误.swift"; sourceTree = "<group>"; };
@@ -125,6 +126,7 @@
 				B6068A5427B3F6ED0075A23E /* 逃逸闭包、非逃逸闭包.swift */,
 				B625012D27CF9E9000F6BA33 /* 内存访问冲突、指针.swift */,
 				B60653F5281281B8004C1895 /* 字面量协议、模式匹配、条件编译.swift */,
+				B60653F72812B34B004C1895 /* OC到Swift、函数式编程.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
