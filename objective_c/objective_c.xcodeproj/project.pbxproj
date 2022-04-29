@@ -31,6 +31,9 @@
 		B65989DC281BC01100C7EB51 /* 002-other-header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "002-other-header.m"; sourceTree = "<group>"; };
 		B65989DE281BC02000C7EB51 /* 002-other-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "002-other-header.h"; sourceTree = "<group>"; };
 		B65989E3281BC81200C7EB51 /* 003-BOOL类型的本质.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "003-BOOL类型的本质.m"; sourceTree = "<group>"; };
+		B65989E5281BCA9700C7EB51 /* 004-OC类的学习.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "004-OC类的学习.m"; sourceTree = "<group>"; };
+		B65989E7281BD9CC00C7EB51 /* 005-OC对象跟函数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "005-OC对象跟函数.m"; sourceTree = "<group>"; };
+		B65AF63D281BE6F7001DAD6F /* 006-OC枚举.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "006-OC枚举.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,9 @@
 			isa = PBXGroup;
 			children = (
 				B65989CC281BB70C00C7EB51 /* main.m */,
+				B65AF63D281BE6F7001DAD6F /* 006-OC枚举.m */,
+				B65989E7281BD9CC00C7EB51 /* 005-OC对象跟函数.m */,
+				B65989E5281BCA9700C7EB51 /* 004-OC类的学习.m */,
 				B65989E3281BC81200C7EB51 /* 003-BOOL类型的本质.m */,
 				B65989D3281BBD0F00C7EB51 /* 001-Objective-c程序.m */,
 				B65989DC281BC01100C7EB51 /* 002-other-header.m */,
