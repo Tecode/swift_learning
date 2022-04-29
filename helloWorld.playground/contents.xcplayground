@@ -13,5 +13,6 @@
         <page name='010-函数类型'/>
         <page name='010-类型别名'/>
         <page name='011-嵌套函数'/>
+        <page name='oc'/>
     </pages>
 </playground>

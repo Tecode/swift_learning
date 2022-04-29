@@ -7,12 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6D92741281A2E33005DC799 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D92740281A2E33005DC799 /* main.swift */; };
-		B6D9274C281A2F79005DC799 /* ObjectiveHuman.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D9274B281A2F79005DC799 /* ObjectiveHuman.m */; };
+		B65989CD281BB70C00C7EB51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65989CC281BB70C00C7EB51 /* main.m */; };
+		B65989DF281BC26800C7EB51 /* 002-other-header.m in Sources */ = {isa = PBXBuildFile; fileRef = B65989DC281BC01100C7EB51 /* 002-other-header.m */; };
+		B65989E1281BC55800C7EB51 /* 002-other-header.h in Sources */ = {isa = PBXBuildFile; fileRef = B65989DE281BC02000C7EB51 /* 002-other-header.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B6D9273B281A2E33005DC799 /* CopyFiles */ = {
+		B65989C7281BB70C00C7EB51 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -24,15 +25,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B6D9273D281A2E33005DC799 /* swift_oc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = swift_oc; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6D92740281A2E33005DC799 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
-		B6D92749281A2F78005DC799 /* swift_oc-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift_oc-Bridging-Header.h"; sourceTree = "<group>"; };
-		B6D9274A281A2F79005DC799 /* ObjectiveHuman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveHuman.h; sourceTree = "<group>"; };
-		B6D9274B281A2F79005DC799 /* ObjectiveHuman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjectiveHuman.m; sourceTree = "<group>"; };
+		B65989C9281BB70C00C7EB51 /* objective_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objective_c; sourceTree = BUILT_PRODUCTS_DIR; };
+		B65989CC281BB70C00C7EB51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B65989D3281BBD0F00C7EB51 /* 001-Objective-c程序.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "001-Objective-c程序.m"; sourceTree = "<group>"; };
+		B65989DC281BC01100C7EB51 /* 002-other-header.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "002-other-header.m"; sourceTree = "<group>"; };
+		B65989DE281BC02000C7EB51 /* 002-other-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "002-other-header.h"; sourceTree = "<group>"; };
+		B65989E3281BC81200C7EB51 /* 003-BOOL类型的本质.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "003-BOOL类型的本质.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		B6D9273A281A2E33005DC799 /* Frameworks */ = {
+		B65989C6281BB70C00C7EB51 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,70 +44,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B6D92734281A2E33005DC799 = {
+		B65989C0281BB70C00C7EB51 = {
 			isa = PBXGroup;
 			children = (
-				B6D9273F281A2E33005DC799 /* swift_oc */,
-				B6D9273E281A2E33005DC799 /* Products */,
+				B65989CB281BB70C00C7EB51 /* objective_c */,
+				B65989CA281BB70C00C7EB51 /* Products */,
+				B65989E2281BC6A300C7EB51 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		B6D9273E281A2E33005DC799 /* Products */ = {
+		B65989CA281BB70C00C7EB51 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B6D9273D281A2E33005DC799 /* swift_oc */,
+				B65989C9281BB70C00C7EB51 /* objective_c */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B6D9273F281A2E33005DC799 /* swift_oc */ = {
+		B65989CB281BB70C00C7EB51 /* objective_c */ = {
 			isa = PBXGroup;
 			children = (
-				B6D92740281A2E33005DC799 /* main.swift */,
-				B6D9274A281A2F79005DC799 /* ObjectiveHuman.h */,
-				B6D9274B281A2F79005DC799 /* ObjectiveHuman.m */,
-				B6D92749281A2F78005DC799 /* swift_oc-Bridging-Header.h */,
+				B65989CC281BB70C00C7EB51 /* main.m */,
+				B65989E3281BC81200C7EB51 /* 003-BOOL类型的本质.m */,
+				B65989D3281BBD0F00C7EB51 /* 001-Objective-c程序.m */,
+				B65989DC281BC01100C7EB51 /* 002-other-header.m */,
+				B65989DE281BC02000C7EB51 /* 002-other-header.h */,
 			);
-			path = swift_oc;
+			path = objective_c;
+			sourceTree = "<group>";
+		};
+		B65989E2281BC6A300C7EB51 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B6D9273C281A2E33005DC799 /* swift_oc */ = {
+		B65989C8281BB70C00C7EB51 /* objective_c */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B6D92744281A2E33005DC799 /* Build configuration list for PBXNativeTarget "swift_oc" */;
+			buildConfigurationList = B65989D0281BB70C00C7EB51 /* Build configuration list for PBXNativeTarget "objective_c" */;
 			buildPhases = (
-				B6D92739281A2E33005DC799 /* Sources */,
-				B6D9273A281A2E33005DC799 /* Frameworks */,
-				B6D9273B281A2E33005DC799 /* CopyFiles */,
+				B65989C5281BB70C00C7EB51 /* Sources */,
+				B65989C6281BB70C00C7EB51 /* Frameworks */,
+				B65989C7281BB70C00C7EB51 /* CopyFiles */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = swift_oc;
-			productName = swift_oc;
-			productReference = B6D9273D281A2E33005DC799 /* swift_oc */;
+			name = objective_c;
+			productName = objective_c;
+			productReference = B65989C9281BB70C00C7EB51 /* objective_c */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		B6D92735281A2E33005DC799 /* Project object */ = {
+		B65989C1281BB70C00C7EB51 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
-					B6D9273C281A2E33005DC799 = {
+					B65989C8281BB70C00C7EB51 = {
 						CreatedOnToolsVersion = 13.0;
-						LastSwiftMigration = 1300;
 					};
 				};
 			};
-			buildConfigurationList = B6D92738281A2E33005DC799 /* Build configuration list for PBXProject "swift_oc" */;
+			buildConfigurationList = B65989C4281BB70C00C7EB51 /* Build configuration list for PBXProject "objective_c" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,30 +122,31 @@
 				en,
 				Base,
 			);
-			mainGroup = B6D92734281A2E33005DC799;
-			productRefGroup = B6D9273E281A2E33005DC799 /* Products */;
+			mainGroup = B65989C0281BB70C00C7EB51;
+			productRefGroup = B65989CA281BB70C00C7EB51 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B6D9273C281A2E33005DC799 /* swift_oc */,
+				B65989C8281BB70C00C7EB51 /* objective_c */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		B6D92739281A2E33005DC799 /* Sources */ = {
+		B65989C5281BB70C00C7EB51 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6D92741281A2E33005DC799 /* main.swift in Sources */,
-				B6D9274C281A2F79005DC799 /* ObjectiveHuman.m in Sources */,
+				B65989E1281BC55800C7EB51 /* 002-other-header.h in Sources */,
+				B65989DF281BC26800C7EB51 /* 002-other-header.m in Sources */,
+				B65989CD281BB70C00C7EB51 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		B6D92742281A2E33005DC799 /* Debug */ = {
+		B65989CE281BB70C00C7EB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -192,12 +202,10 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		B6D92743281A2E33005DC799 /* Release */ = {
+		B65989CF281BB70C00C7EB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -246,66 +254,47 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;
 		};
-		B6D92745281A2E33005DC799 /* Debug */ = {
+		B65989D1281BB70C00C7EB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "swift_oc/swift_oc-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		B6D92746281A2E33005DC799 /* Release */ = {
+		B65989D2281BB70C00C7EB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "swift_oc/swift_oc-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B6D92738281A2E33005DC799 /* Build configuration list for PBXProject "swift_oc" */ = {
+		B65989C4281BB70C00C7EB51 /* Build configuration list for PBXProject "objective_c" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6D92742281A2E33005DC799 /* Debug */,
-				B6D92743281A2E33005DC799 /* Release */,
+				B65989CE281BB70C00C7EB51 /* Debug */,
+				B65989CF281BB70C00C7EB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6D92744281A2E33005DC799 /* Build configuration list for PBXNativeTarget "swift_oc" */ = {
+		B65989D0281BB70C00C7EB51 /* Build configuration list for PBXNativeTarget "objective_c" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B6D92745281A2E33005DC799 /* Debug */,
-				B6D92746281A2E33005DC799 /* Release */,
+				B65989D1281BB70C00C7EB51 /* Debug */,
+				B65989D2281BB70C00C7EB51 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = B6D92735281A2E33005DC799 /* Project object */;
+	rootObject = B65989C1281BB70C00C7EB51 /* Project object */;
 }
