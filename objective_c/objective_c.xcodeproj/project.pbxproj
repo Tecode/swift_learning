@@ -25,7 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B657E26F282BD50A00309A4E /* 008-对象封装、继承、多态.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "008-对象封装、继承、多态.m"; sourceTree = "<group>"; };
+		B657E26F282BD50A00309A4E /* 008-对象封装.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "008-对象封装.m"; sourceTree = "<group>"; };
 		B65989C9281BB70C00C7EB51 /* objective_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objective_c; sourceTree = BUILT_PRODUCTS_DIR; };
 		B65989CC281BB70C00C7EB51 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B65989D3281BBD0F00C7EB51 /* 001-Objective-c程序.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "001-Objective-c程序.m"; sourceTree = "<group>"; };
@@ -70,7 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				B65989CC281BB70C00C7EB51 /* main.m */,
-				B657E26F282BD50A00309A4E /* 008-对象封装、继承、多态.m */,
+				B657E26F282BD50A00309A4E /* 008-对象封装.m */,
 				B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */,
 				B65AF63D281BE6F7001DAD6F /* 006-OC枚举.m */,
 				B65989E7281BD9CC00C7EB51 /* 005-OC对象跟函数.m */,
