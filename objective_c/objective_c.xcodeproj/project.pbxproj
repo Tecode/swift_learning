@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B6400BCD283230C20089D15F /* 010-self.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "010-self.m"; sourceTree = "<group>"; };
 		B64C5358282E5B7F00CAEBC2 /* 009-类方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "009-类方法.m"; sourceTree = "<group>"; };
 		B657E26F282BD50A00309A4E /* 008-对象封装.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "008-对象封装.m"; sourceTree = "<group>"; };
 		B65989C9281BB70C00C7EB51 /* objective_c */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objective_c; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +38,8 @@
 		B65989E7281BD9CC00C7EB51 /* 005-OC对象跟函数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "005-OC对象跟函数.m"; sourceTree = "<group>"; };
 		B65AF63D281BE6F7001DAD6F /* 006-OC枚举.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "006-OC枚举.m"; sourceTree = "<group>"; };
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
+		B6E4749E2833B59400D273F0 /* 011-继承和组合.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "011-继承和组合.m"; sourceTree = "<group>"; };
+		B6E474A02833C51900D273F0 /* 012-多态.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "012-多态.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +74,9 @@
 			isa = PBXGroup;
 			children = (
 				B65989CC281BB70C00C7EB51 /* main.m */,
+				B6E4749E2833B59400D273F0 /* 011-继承和组合.m */,
+				B6E474A02833C51900D273F0 /* 012-多态.m */,
+				B6400BCD283230C20089D15F /* 010-self.m */,
 				B64C5358282E5B7F00CAEBC2 /* 009-类方法.m */,
 				B657E26F282BD50A00309A4E /* 008-对象封装.m */,
 				B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */,
