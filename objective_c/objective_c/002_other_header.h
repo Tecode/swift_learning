@@ -6,3 +6,7 @@
 //
 
 void caculation(int a, int b);
+
+@interface Caculator : NSObject
++(void)run:(int)value001 num:(int)value002;
+@end
