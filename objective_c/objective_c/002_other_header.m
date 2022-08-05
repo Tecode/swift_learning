@@ -14,6 +14,6 @@ void run(int value001, int value002){
 }
 @implementation Caculator
 +(void)run:(int)value001 num:(int)value002{
-    NSLog(@"%d", value001 + value002);
+    NSLog(@"run 方法输出的结果%d", value001 + value002);
 }
 @end

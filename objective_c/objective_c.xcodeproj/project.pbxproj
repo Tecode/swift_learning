@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		B65989CD281BB70C00C7EB51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65989CC281BB70C00C7EB51 /* main.m */; };
-		B65989DF281BC26800C7EB51 /* 002_other_header.m in Sources */ = {isa = PBXBuildFile; fileRef = B65989DC281BC01100C7EB51 /* 002_other_header.m */; };
-		B65989E1281BC55800C7EB51 /* 002_other_header.h in Sources */ = {isa = PBXBuildFile; fileRef = B65989DE281BC02000C7EB51 /* 002_other_header.h */; };
+		B6CD9FD3289D0F8100BA631A /* 015_dot_syntax.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CD9FD2289D0F8100BA631A /* 015_dot_syntax.m */; };
+		B6CD9FD4289D13B800BA631A /* 015_dot_syntax.h in Sources */ = {isa = PBXBuildFile; fileRef = B6CD9FD1289D0F8100BA631A /* 015_dot_syntax.h */; };
+		B6CD9FD6289D16E400BA631A /* 015_dot_syntax_main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6CD9FD5289D16E400BA631A /* 015_dot_syntax_main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -40,6 +41,10 @@
 		B65989E7281BD9CC00C7EB51 /* 005-OC对象跟函数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "005-OC对象跟函数.m"; sourceTree = "<group>"; };
 		B65AF63D281BE6F7001DAD6F /* 006-OC枚举.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "006-OC枚举.m"; sourceTree = "<group>"; };
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
+		B6CD9FCE289D0C4200BA631A /* 002_other_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 002_other_main.m; sourceTree = "<group>"; };
+		B6CD9FD1289D0F8100BA631A /* 015_dot_syntax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 015_dot_syntax.h; sourceTree = "<group>"; };
+		B6CD9FD2289D0F8100BA631A /* 015_dot_syntax.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 015_dot_syntax.m; sourceTree = "<group>"; };
+		B6CD9FD5289D16E400BA631A /* 015_dot_syntax_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 015_dot_syntax_main.m; sourceTree = "<group>"; };
 		B6E4749E2833B59400D273F0 /* 011-继承和组合.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "011-继承和组合.m"; sourceTree = "<group>"; };
 		B6E474A02833C51900D273F0 /* 012-多态.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "012-多态.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -79,6 +84,7 @@
 				B65989D3281BBD0F00C7EB51 /* 001-Objective-c程序.m */,
 				B65989DC281BC01100C7EB51 /* 002_other_header.m */,
 				B65989DE281BC02000C7EB51 /* 002_other_header.h */,
+				B6CD9FCE289D0C4200BA631A /* 002_other_main.m */,
 				B65989E3281BC81200C7EB51 /* 003-BOOL类型的本质.m */,
 				B65989E5281BCA9700C7EB51 /* 004-OC类的学习.m */,
 				B65989E7281BD9CC00C7EB51 /* 005-OC对象跟函数.m */,
@@ -91,6 +97,9 @@
 				B6E474A02833C51900D273F0 /* 012-多态.m */,
 				B63D92B42844C3E400C79EAA /* 013-super.m */,
 				B602C8C72858AFB600626400 /* 014-NSString.m */,
+				B6CD9FD1289D0F8100BA631A /* 015_dot_syntax.h */,
+				B6CD9FD2289D0F8100BA631A /* 015_dot_syntax.m */,
+				B6CD9FD5289D16E400BA631A /* 015_dot_syntax_main.m */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -159,8 +168,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B65989E1281BC55800C7EB51 /* 002_other_header.h in Sources */,
-				B65989DF281BC26800C7EB51 /* 002_other_header.m in Sources */,
+				B6CD9FD4289D13B800BA631A /* 015_dot_syntax.h in Sources */,
+				B6CD9FD3289D0F8100BA631A /* 015_dot_syntax.m in Sources */,
+				B6CD9FD6289D16E400BA631A /* 015_dot_syntax_main.m in Sources */,
 				B65989CD281BB70C00C7EB51 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
