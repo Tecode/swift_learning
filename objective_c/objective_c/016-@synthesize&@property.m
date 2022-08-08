@@ -26,6 +26,7 @@
 
 @implementation Human002
 // @synthesize自动生成getter和setter实现并访问_age成员变量
+// 访问_age成员变量，如果没有回自动生成@private类型的_age成员变量
 @synthesize age = _age;
 
 - (void)run {
