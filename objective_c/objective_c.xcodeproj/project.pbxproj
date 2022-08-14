@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B65989CD281BB70C00C7EB51 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B65989CC281BB70C00C7EB51 /* main.m */; };
 		B691E1EB28A14CB000B2948B /* 002_other_header.h in Sources */ = {isa = PBXBuildFile; fileRef = B65989DE281BC02000C7EB51 /* 002_other_header.h */; };
-		B6C042DC28A8E3F300BE5730 /* 019-自定义构造方法.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C042DB28A8E3F300BE5730 /* 019-自定义构造方法.m */; };
+		B6C042DF28A8E63100BE5730 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C042DE28A8E63100BE5730 /* main.m */; };
+		B6C042E828A8E87C00BE5730 /* Human001.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C042E728A8E87C00BE5730 /* Human001.m */; };
+		B6C042EB28A8E9F400BE5730 /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C042EA28A8E9F400BE5730 /* NSObject+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,11 @@
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
 		B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "018-构造方法.m"; sourceTree = "<group>"; };
 		B6C042DB28A8E3F300BE5730 /* 019-自定义构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "019-自定义构造方法.m"; sourceTree = "<group>"; };
+		B6C042DE28A8E63100BE5730 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6C042E628A8E87C00BE5730 /* Human001.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human001.h; sourceTree = "<group>"; };
+		B6C042E728A8E87C00BE5730 /* Human001.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human001.m; sourceTree = "<group>"; };
+		B6C042E928A8E9F400BE5730 /* NSObject+Log.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
+		B6C042EA28A8E9F400BE5730 /* NSObject+Log.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
 		B6CD9FCE289D0C4200BA631A /* 002_other_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 002_other_main.m; sourceTree = "<group>"; };
 		B6CD9FD1289D0F8100BA631A /* 015_dot_syntax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 015_dot_syntax.h; sourceTree = "<group>"; };
 		B6CD9FD2289D0F8100BA631A /* 015_dot_syntax.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 015_dot_syntax.m; sourceTree = "<group>"; };
@@ -107,6 +113,7 @@
 				B691E1E928A1483C00B2948B /* 017-id.m */,
 				B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */,
 				B6C042DB28A8E3F300BE5730 /* 019-自定义构造方法.m */,
+				B6C042DD28A8E5F400BE5730 /* 020-category */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -116,6 +123,18 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6C042DD28A8E5F400BE5730 /* 020-category */ = {
+			isa = PBXGroup;
+			children = (
+				B6C042DE28A8E63100BE5730 /* main.m */,
+				B6C042E928A8E9F400BE5730 /* NSObject+Log.h */,
+				B6C042EA28A8E9F400BE5730 /* NSObject+Log.m */,
+				B6C042E628A8E87C00BE5730 /* Human001.h */,
+				B6C042E728A8E87C00BE5730 /* Human001.m */,
+			);
+			path = "020-category";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,8 +195,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B691E1EB28A14CB000B2948B /* 002_other_header.h in Sources */,
-				B6C042DC28A8E3F300BE5730 /* 019-自定义构造方法.m in Sources */,
-				B65989CD281BB70C00C7EB51 /* main.m in Sources */,
+				B6C042DF28A8E63100BE5730 /* main.m in Sources */,
+				B6C042EB28A8E9F400BE5730 /* NSObject+Log.m in Sources */,
+				B6C042E828A8E87C00BE5730 /* Human001.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
