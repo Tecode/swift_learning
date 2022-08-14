@@ -6,11 +6,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "002_other_header.h"
 
-
-int main(){
-    [Caculator run:2 num:3];
+int main() {
+    NSLog(@"-----L");
     return 0;
 }
-

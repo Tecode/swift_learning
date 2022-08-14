@@ -41,6 +41,7 @@
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
 		B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "016-@synthesize&@property.m"; sourceTree = "<group>"; };
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
+		B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "018-构造方法.m"; sourceTree = "<group>"; };
 		B6CD9FCE289D0C4200BA631A /* 002_other_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 002_other_main.m; sourceTree = "<group>"; };
 		B6CD9FD1289D0F8100BA631A /* 015_dot_syntax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 015_dot_syntax.h; sourceTree = "<group>"; };
 		B6CD9FD2289D0F8100BA631A /* 015_dot_syntax.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 015_dot_syntax.m; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 				B6CD9FD5289D16E400BA631A /* 015_dot_syntax_main.m */,
 				B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */,
 				B691E1E928A1483C00B2948B /* 017-id.m */,
+				B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
