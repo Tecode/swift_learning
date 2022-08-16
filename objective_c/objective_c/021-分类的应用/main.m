@@ -15,6 +15,9 @@ int main() {
     NSLog(@"字符串包含的数字有 %d 个", count);
     NSLog(@"ascii码 %d", (int)(_value));
     NSLog(@"ascii码 %d", _value + 1);
+//    对象方法
+    int numberCount = [@"haoxuan1009 2c" numberCount];
+    NSLog(@"对象方法字符串包含的数字有 %d 个", numberCount);
     return 0;
 }
 

@@ -9,10 +9,22 @@
 
 @implementation NSString (Number)
 + (int)numberCountOfString:(NSString *)value {
+//    int count = 0;
+//    for (int index = 0; index < value.length; ++index) {
+//        char _value = [value characterAtIndex: index];
+//        NSLog(@"%c", _value);
+//        // 比对ascii码
+//        if (_value >= 48 && _value <= 57) {
+//            count ++;
+//        }
+//    }
+    return [value numberCount];
+}
+- (int)numberCount {
     int count = 0;
-    for (int index = 0; index < value.length; ++index) {
-        char _value = [value characterAtIndex: index];
-        NSLog(@"%c", _value);
+    for (int index = 0; index < self.length; ++index) {
+        char _value = [self characterAtIndex: index];
+//        NSLog(@"%c", _value);
         // 比对ascii码
         if (_value >= 48 && _value <= 57) {
             count ++;
