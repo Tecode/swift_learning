@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6651CD728D5D27C006AF8C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CD628D5D27C006AF8C7 /* main.m */; };
-		B6651CDA28D5D298006AF8C7 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CD928D5D298006AF8C7 /* Human.m */; };
+		B6651CDD28D618C9006AF8C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CDC28D618C9006AF8C7 /* main.m */; };
+		B6651CE028D61B77006AF8C7 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CDF28D61B77006AF8C7 /* Human.m */; };
+		B6651CE328D61C01006AF8C7 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CE228D61C01006AF8C7 /* Book.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,6 +48,11 @@
 		B6651CD628D5D27C006AF8C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6651CD828D5D298006AF8C7 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
 		B6651CD928D5D298006AF8C7 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B6651CDC28D618C9006AF8C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6651CDE28D61B77006AF8C7 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B6651CDF28D61B77006AF8C7 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B6651CE128D61C01006AF8C7 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		B6651CE228D61C01006AF8C7 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
 		B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "016-@synthesize&@property.m"; sourceTree = "<group>"; };
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
@@ -128,6 +134,7 @@
 				B6651CC928D57566006AF8C7 /* 022-description */,
 				B6651CCF28D5B517006AF8C7 /* 023-SEL */,
 				B6651CD528D5D18C006AF8C7 /* 024-memory-management */,
+				B6651CDB28D61879006AF8C7 /* 025-multiple-memory-management */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -167,6 +174,18 @@
 				B6651CD928D5D298006AF8C7 /* Human.m */,
 			);
 			path = "024-memory-management";
+			sourceTree = "<group>";
+		};
+		B6651CDB28D61879006AF8C7 /* 025-multiple-memory-management */ = {
+			isa = PBXGroup;
+			children = (
+				B6651CDC28D618C9006AF8C7 /* main.m */,
+				B6651CDE28D61B77006AF8C7 /* Human.h */,
+				B6651CDF28D61B77006AF8C7 /* Human.m */,
+				B6651CE128D61C01006AF8C7 /* Book.h */,
+				B6651CE228D61C01006AF8C7 /* Book.m */,
+			);
+			path = "025-multiple-memory-management";
 			sourceTree = "<group>";
 		};
 		B6C042DD28A8E5F400BE5730 /* 020-category */ = {
@@ -248,8 +267,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6651CD728D5D27C006AF8C7 /* main.m in Sources */,
-				B6651CDA28D5D298006AF8C7 /* Human.m in Sources */,
+				B6651CDD28D618C9006AF8C7 /* main.m in Sources */,
+				B6651CE328D61C01006AF8C7 /* Book.m in Sources */,
+				B6651CE028D61B77006AF8C7 /* Human.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
