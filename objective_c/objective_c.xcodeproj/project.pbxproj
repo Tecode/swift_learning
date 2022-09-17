@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6C042EE28A8F28900BE5730 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C042ED28A8F28900BE5730 /* main.m */; };
-		B6C042F128A8F2B500BE5730 /* NSString+Number.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C042F028A8F2B500BE5730 /* NSString+Number.m */; };
+		B6651CCC28D575B4006AF8C7 /* Human001.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CCB28D575B4006AF8C7 /* Human001.m */; };
+		B6651CCE28D575EF006AF8C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CCD28D575EF006AF8C7 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +38,9 @@
 		B65989E5281BCA9700C7EB51 /* 004-OC类的学习.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "004-OC类的学习.m"; sourceTree = "<group>"; };
 		B65989E7281BD9CC00C7EB51 /* 005-OC对象跟函数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "005-OC对象跟函数.m"; sourceTree = "<group>"; };
 		B65AF63D281BE6F7001DAD6F /* 006-OC枚举.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "006-OC枚举.m"; sourceTree = "<group>"; };
+		B6651CCA28D575B4006AF8C7 /* Human001.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human001.h; sourceTree = "<group>"; };
+		B6651CCB28D575B4006AF8C7 /* Human001.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human001.m; sourceTree = "<group>"; };
+		B6651CCD28D575EF006AF8C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
 		B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "016-@synthesize&@property.m"; sourceTree = "<group>"; };
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
@@ -114,6 +117,7 @@
 				B691E1E928A1483C00B2948B /* 017-id.m */,
 				B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */,
 				B6C042DB28A8E3F300BE5730 /* 019-自定义构造方法.m */,
+				B6651CC928D57566006AF8C7 /* 022-description */,
 				B6C042DD28A8E5F400BE5730 /* 020-category */,
 				B6C042EC28A8F20300BE5730 /* 021-分类的应用 */,
 			);
@@ -125,6 +129,16 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B6651CC928D57566006AF8C7 /* 022-description */ = {
+			isa = PBXGroup;
+			children = (
+				B6651CCA28D575B4006AF8C7 /* Human001.h */,
+				B6651CCB28D575B4006AF8C7 /* Human001.m */,
+				B6651CCD28D575EF006AF8C7 /* main.m */,
+			);
+			path = "022-description";
 			sourceTree = "<group>";
 		};
 		B6C042DD28A8E5F400BE5730 /* 020-category */ = {
@@ -206,8 +220,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6C042F128A8F2B500BE5730 /* NSString+Number.m in Sources */,
-				B6C042EE28A8F28900BE5730 /* main.m in Sources */,
+				B6651CCE28D575EF006AF8C7 /* main.m in Sources */,
+				B6651CCC28D575B4006AF8C7 /* Human001.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
