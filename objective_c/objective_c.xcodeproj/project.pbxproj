@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6651CD228D5B605006AF8C7 /* Hunman.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CD128D5B605006AF8C7 /* Hunman.m */; };
-		B6651CD428D5B61C006AF8C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CD328D5B61C006AF8C7 /* main.m */; };
+		B6651CD728D5D27C006AF8C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CD628D5D27C006AF8C7 /* main.m */; };
+		B6651CDA28D5D298006AF8C7 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CD928D5D298006AF8C7 /* Human.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +44,9 @@
 		B6651CD028D5B605006AF8C7 /* Hunman.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Hunman.h; sourceTree = "<group>"; };
 		B6651CD128D5B605006AF8C7 /* Hunman.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Hunman.m; sourceTree = "<group>"; };
 		B6651CD328D5B61C006AF8C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6651CD628D5D27C006AF8C7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6651CD828D5D298006AF8C7 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B6651CD928D5D298006AF8C7 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
 		B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "016-@synthesize&@property.m"; sourceTree = "<group>"; };
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
@@ -119,11 +122,12 @@
 				B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */,
 				B691E1E928A1483C00B2948B /* 017-id.m */,
 				B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */,
-				B6651CCF28D5B517006AF8C7 /* 023-SEL */,
 				B6C042DB28A8E3F300BE5730 /* 019-自定义构造方法.m */,
 				B6C042DD28A8E5F400BE5730 /* 020-category */,
 				B6C042EC28A8F20300BE5730 /* 021-分类的应用 */,
 				B6651CC928D57566006AF8C7 /* 022-description */,
+				B6651CCF28D5B517006AF8C7 /* 023-SEL */,
+				B6651CD528D5D18C006AF8C7 /* 024-memory-management */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -153,6 +157,16 @@
 				B6651CD128D5B605006AF8C7 /* Hunman.m */,
 			);
 			path = "023-SEL";
+			sourceTree = "<group>";
+		};
+		B6651CD528D5D18C006AF8C7 /* 024-memory-management */ = {
+			isa = PBXGroup;
+			children = (
+				B6651CD628D5D27C006AF8C7 /* main.m */,
+				B6651CD828D5D298006AF8C7 /* Human.h */,
+				B6651CD928D5D298006AF8C7 /* Human.m */,
+			);
+			path = "024-memory-management";
 			sourceTree = "<group>";
 		};
 		B6C042DD28A8E5F400BE5730 /* 020-category */ = {
@@ -234,8 +248,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6651CD428D5B61C006AF8C7 /* main.m in Sources */,
-				B6651CD228D5B605006AF8C7 /* Hunman.m in Sources */,
+				B6651CD728D5D27C006AF8C7 /* main.m in Sources */,
+				B6651CDA28D5D298006AF8C7 /* Human.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +265,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
@@ -310,7 +324,7 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
