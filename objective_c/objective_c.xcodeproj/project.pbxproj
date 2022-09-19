@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6651CDD28D618C9006AF8C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CDC28D618C9006AF8C7 /* main.m */; };
-		B6651CE028D61B77006AF8C7 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CDF28D61B77006AF8C7 /* Human.m */; };
-		B6651CE328D61C01006AF8C7 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = B6651CE228D61C01006AF8C7 /* Book.m */; };
+		B6E1DF1928D8810500DADEBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E1DF1828D8810400DADEBE /* main.m */; };
+		B6E1DF1C28D8811E00DADEBE /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E1DF1B28D8811E00DADEBE /* Human.m */; };
+		B6E1DF1F28D8812B00DADEBE /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E1DF1E28D8812B00DADEBE /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,6 +70,11 @@
 		B6CD9FD1289D0F8100BA631A /* 015_dot_syntax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 015_dot_syntax.h; sourceTree = "<group>"; };
 		B6CD9FD2289D0F8100BA631A /* 015_dot_syntax.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 015_dot_syntax.m; sourceTree = "<group>"; };
 		B6CD9FD5289D16E400BA631A /* 015_dot_syntax_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 015_dot_syntax_main.m; sourceTree = "<group>"; };
+		B6E1DF1828D8810400DADEBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6E1DF1A28D8811E00DADEBE /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B6E1DF1B28D8811E00DADEBE /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B6E1DF1D28D8812B00DADEBE /* Car.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		B6E1DF1E28D8812B00DADEBE /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		B6E4749E2833B59400D273F0 /* 011-继承和组合.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "011-继承和组合.m"; sourceTree = "<group>"; };
 		B6E474A02833C51900D273F0 /* 012-多态.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "012-多态.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +140,7 @@
 				B6651CCF28D5B517006AF8C7 /* 023-SEL */,
 				B6651CD528D5D18C006AF8C7 /* 024-memory-management */,
 				B6651CDB28D61879006AF8C7 /* 025-multiple-memory-management */,
+				B6E1DF1728D880CF00DADEBE /* 026-set-memory-management */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -210,6 +216,18 @@
 			path = "021-分类的应用";
 			sourceTree = "<group>";
 		};
+		B6E1DF1728D880CF00DADEBE /* 026-set-memory-management */ = {
+			isa = PBXGroup;
+			children = (
+				B6E1DF1828D8810400DADEBE /* main.m */,
+				B6E1DF1D28D8812B00DADEBE /* Car.h */,
+				B6E1DF1E28D8812B00DADEBE /* Car.m */,
+				B6E1DF1A28D8811E00DADEBE /* Human.h */,
+				B6E1DF1B28D8811E00DADEBE /* Human.m */,
+			);
+			path = "026-set-memory-management";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -267,9 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6651CDD28D618C9006AF8C7 /* main.m in Sources */,
-				B6651CE328D61C01006AF8C7 /* Book.m in Sources */,
-				B6651CE028D61B77006AF8C7 /* Human.m in Sources */,
+				B6E1DF1F28D8812B00DADEBE /* Car.m in Sources */,
+				B6E1DF1928D8810500DADEBE /* main.m in Sources */,
+				B6E1DF1C28D8811E00DADEBE /* Human.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
