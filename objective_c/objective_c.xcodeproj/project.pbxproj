@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6E1DF1928D8810500DADEBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E1DF1828D8810400DADEBE /* main.m */; };
-		B6E1DF1C28D8811E00DADEBE /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E1DF1B28D8811E00DADEBE /* Human.m */; };
-		B6E1DF1F28D8812B00DADEBE /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E1DF1E28D8812B00DADEBE /* Car.m */; };
+		B610C0E6290950BF00C43A4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B610C0E5290950BF00C43A4B /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		B602C8C72858AFB600626400 /* 014-NSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "014-NSString.m"; sourceTree = "<group>"; };
+		B610C0E5290950BF00C43A4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B63D92B42844C3E400C79EAA /* 013-super.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "013-super.m"; sourceTree = "<group>"; };
 		B6400BCD283230C20089D15F /* 010-self.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "010-self.m"; sourceTree = "<group>"; };
 		B64C5358282E5B7F00CAEBC2 /* 009-类方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "009-类方法.m"; sourceTree = "<group>"; };
@@ -90,6 +89,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B610C0E12909502000C43A4B /* 027-property-memory */ = {
+			isa = PBXGroup;
+			children = (
+				B610C0E5290950BF00C43A4B /* main.m */,
+			);
+			path = "027-property-memory";
+			sourceTree = "<group>";
+		};
 		B65989C0281BB70C00C7EB51 = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +148,7 @@
 				B6651CD528D5D18C006AF8C7 /* 024-memory-management */,
 				B6651CDB28D61879006AF8C7 /* 025-multiple-memory-management */,
 				B6E1DF1728D880CF00DADEBE /* 026-set-memory-management */,
+				B610C0E12909502000C43A4B /* 027-property-memory */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -285,9 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E1DF1F28D8812B00DADEBE /* Car.m in Sources */,
-				B6E1DF1928D8810500DADEBE /* main.m in Sources */,
-				B6E1DF1C28D8811E00DADEBE /* Human.m in Sources */,
+				B610C0E6290950BF00C43A4B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
