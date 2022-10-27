@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B610C0E6290950BF00C43A4B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B610C0E5290950BF00C43A4B /* main.m */; };
+		B6DE80F6290A2DF700BA0061 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DE80F5290A2DF700BA0061 /* Human.m */; };
+		B6DE80F9290A2E0800BA0061 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = B6DE80F8290A2E0800BA0061 /* Book.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +71,10 @@
 		B6CD9FD1289D0F8100BA631A /* 015_dot_syntax.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = 015_dot_syntax.h; sourceTree = "<group>"; };
 		B6CD9FD2289D0F8100BA631A /* 015_dot_syntax.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 015_dot_syntax.m; sourceTree = "<group>"; };
 		B6CD9FD5289D16E400BA631A /* 015_dot_syntax_main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = 015_dot_syntax_main.m; sourceTree = "<group>"; };
+		B6DE80F4290A2DF700BA0061 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B6DE80F5290A2DF700BA0061 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B6DE80F7290A2E0800BA0061 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		B6DE80F8290A2E0800BA0061 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
 		B6E1DF1828D8810400DADEBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6E1DF1A28D8811E00DADEBE /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
 		B6E1DF1B28D8811E00DADEBE /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
@@ -93,6 +99,10 @@
 			isa = PBXGroup;
 			children = (
 				B610C0E5290950BF00C43A4B /* main.m */,
+				B6DE80F7290A2E0800BA0061 /* Book.h */,
+				B6DE80F8290A2E0800BA0061 /* Book.m */,
+				B6DE80F4290A2DF700BA0061 /* Human.h */,
+				B6DE80F5290A2DF700BA0061 /* Human.m */,
 			);
 			path = "027-property-memory";
 			sourceTree = "<group>";
@@ -294,6 +304,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B610C0E6290950BF00C43A4B /* main.m in Sources */,
+				B6DE80F9290A2E0800BA0061 /* Book.m in Sources */,
+				B6DE80F6290A2DF700BA0061 /* Human.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
