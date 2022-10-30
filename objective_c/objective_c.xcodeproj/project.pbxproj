@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B67CFB10290EAD04006DFEA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CFB0F290EAD04006DFEA2 /* main.m */; };
-		B67CFB13290EAD2F006DFEA2 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CFB12290EAD2F006DFEA2 /* Human.m */; };
+		B67CFB16290EBD41006DFEA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CFB15290EBD41006DFEA2 /* main.m */; };
+		B67CFB19290EBD65006DFEA2 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CFB18290EBD65006DFEA2 /* Human.m */; };
+		B67CFB1C290EBD77006DFEA2 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CFB1B290EBD77006DFEA2 /* Student.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +62,11 @@
 		B67CFB0F290EAD04006DFEA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B67CFB11290EAD2F006DFEA2 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
 		B67CFB12290EAD2F006DFEA2 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B67CFB15290EBD41006DFEA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B67CFB17290EBD65006DFEA2 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B67CFB18290EBD65006DFEA2 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B67CFB1A290EBD77006DFEA2 /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		B67CFB1B290EBD77006DFEA2 /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
 		B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "016-@synthesize&@property.m"; sourceTree = "<group>"; };
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
@@ -168,6 +174,7 @@
 				B610C0E12909502000C43A4B /* 027-property-memory */,
 				B6DE80FA290AA77A00BA0061 /* 028-circle-reference */,
 				B67CFB0E290EACEE006DFEA2 /* 029-autorelease */,
+				B67CFB14290EBBA3006DFEA2 /* 030-autorelease-use */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -229,6 +236,18 @@
 				B67CFB12290EAD2F006DFEA2 /* Human.m */,
 			);
 			path = "029-autorelease";
+			sourceTree = "<group>";
+		};
+		B67CFB14290EBBA3006DFEA2 /* 030-autorelease-use */ = {
+			isa = PBXGroup;
+			children = (
+				B67CFB15290EBD41006DFEA2 /* main.m */,
+				B67CFB17290EBD65006DFEA2 /* Human.h */,
+				B67CFB18290EBD65006DFEA2 /* Human.m */,
+				B67CFB1A290EBD77006DFEA2 /* Student.h */,
+				B67CFB1B290EBD77006DFEA2 /* Student.m */,
+			);
+			path = "030-autorelease-use";
 			sourceTree = "<group>";
 		};
 		B6C042DD28A8E5F400BE5730 /* 020-category */ = {
@@ -334,8 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67CFB10290EAD04006DFEA2 /* main.m in Sources */,
-				B67CFB13290EAD2F006DFEA2 /* Human.m in Sources */,
+				B67CFB16290EBD41006DFEA2 /* main.m in Sources */,
+				B67CFB19290EBD65006DFEA2 /* Human.m in Sources */,
+				B67CFB1C290EBD77006DFEA2 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
