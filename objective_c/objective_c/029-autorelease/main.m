@@ -21,6 +21,23 @@
  3、autorelease的使用注意
      1.占用内存较大的对象不要随意使用autorelease
      2.占用内存较小的对象使用autorelease，没太大影响
+ 4、错误写法
+     1.alloc后调用autorelease又调用release
+     @autoreleasepool {
+         Human *human2 = [[[Human alloc] init] autorelease];
+         human2.age = 45;
+         NSLog(@"Human2的年龄：%d", human2.age);
+         [human2 release]
+     }
+     2.连续多次调用autorelease
+     @autoreleasepool {
+         Human *human2 = [ [[[Human alloc] init] autorelease] autorelease];
+         human2.age = 45;
+         NSLog(@"Human2的年龄：%d", human2.age);
+     }
+ 5、自动释放池
+     1.在iOS程序运行过程中，会创建无数个池子。这些池子都是以栈结构存在（先进后出）
+     2.当一个对象调用autorelease方法时，会将这个对象放到栈顶的释放池
  */
 
 int main() {
