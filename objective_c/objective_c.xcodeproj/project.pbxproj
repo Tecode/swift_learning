@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B67CFB16290EBD41006DFEA2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CFB15290EBD41006DFEA2 /* main.m */; };
-		B67CFB19290EBD65006DFEA2 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CFB18290EBD65006DFEA2 /* Human.m */; };
-		B67CFB1C290EBD77006DFEA2 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B67CFB1B290EBD77006DFEA2 /* Student.m */; };
+		B6192794290FF7AA003113C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B619278F290FF65D003113C8 /* main.m */; };
+		B6192795290FF887003113C8 /* Human.h in Sources */ = {isa = PBXBuildFile; fileRef = B6192791290FF6D1003113C8 /* Human.h */; };
+		B6192796290FF887003113C8 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6192792290FF6D1003113C8 /* Human.m */; };
+		B6192799290FFA41003113C8 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = B6192798290FFA41003113C8 /* Bird.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -27,6 +28,11 @@
 /* Begin PBXFileReference section */
 		B602C8C72858AFB600626400 /* 014-NSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "014-NSString.m"; sourceTree = "<group>"; };
 		B610C0E5290950BF00C43A4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B619278F290FF65D003113C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6192791290FF6D1003113C8 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B6192792290FF6D1003113C8 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B6192797290FFA41003113C8 /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		B6192798290FFA41003113C8 /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		B62E4AD7290AA83300E58A29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B62E4AD9290AA8C300E58A29 /* IDCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDCard.h; sourceTree = "<group>"; };
 		B62E4ADA290AA8C300E58A29 /* IDCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDCard.m; sourceTree = "<group>"; };
@@ -120,6 +126,18 @@
 			path = "027-property-memory";
 			sourceTree = "<group>";
 		};
+		B619278E290FF62B003113C8 /* 031-arc-use */ = {
+			isa = PBXGroup;
+			children = (
+				B619278F290FF65D003113C8 /* main.m */,
+				B6192797290FFA41003113C8 /* Bird.h */,
+				B6192798290FFA41003113C8 /* Bird.m */,
+				B6192791290FF6D1003113C8 /* Human.h */,
+				B6192792290FF6D1003113C8 /* Human.m */,
+			);
+			path = "031-arc-use";
+			sourceTree = "<group>";
+		};
 		B65989C0281BB70C00C7EB51 = {
 			isa = PBXGroup;
 			children = (
@@ -175,6 +193,7 @@
 				B6DE80FA290AA77A00BA0061 /* 028-circle-reference */,
 				B67CFB0E290EACEE006DFEA2 /* 029-autorelease */,
 				B67CFB14290EBBA3006DFEA2 /* 030-autorelease-use */,
+				B619278E290FF62B003113C8 /* 031-arc-use */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -353,9 +372,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B67CFB16290EBD41006DFEA2 /* main.m in Sources */,
-				B67CFB19290EBD65006DFEA2 /* Human.m in Sources */,
-				B67CFB1C290EBD77006DFEA2 /* Student.m in Sources */,
+				B6192795290FF887003113C8 /* Human.h in Sources */,
+				B6192796290FF887003113C8 /* Human.m in Sources */,
+				B6192799290FFA41003113C8 /* Bird.m in Sources */,
+				B6192794290FF7AA003113C8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -476,6 +496,7 @@
 		B65989D1281BB70C00C7EB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -484,6 +505,7 @@
 		B65989D2281BB70C00C7EB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
