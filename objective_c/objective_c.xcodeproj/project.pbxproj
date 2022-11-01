@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6192794290FF7AA003113C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B619278F290FF65D003113C8 /* main.m */; };
-		B6192795290FF887003113C8 /* Human.h in Sources */ = {isa = PBXBuildFile; fileRef = B6192791290FF6D1003113C8 /* Human.h */; };
-		B6192796290FF887003113C8 /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6192792290FF6D1003113C8 /* Human.m */; };
-		B6192799290FFA41003113C8 /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = B6192798290FFA41003113C8 /* Bird.m */; };
+		B6AA1CF22911383E003AC0EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AA1CF12911383E003AC0EB /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -76,6 +73,7 @@
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
 		B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "016-@synthesize&@property.m"; sourceTree = "<group>"; };
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
+		B6AA1CF12911383E003AC0EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "018-构造方法.m"; sourceTree = "<group>"; };
 		B6C042DB28A8E3F300BE5730 /* 019-自定义构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "019-自定义构造方法.m"; sourceTree = "<group>"; };
 		B6C042DE28A8E63100BE5730 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -194,6 +192,7 @@
 				B67CFB0E290EACEE006DFEA2 /* 029-autorelease */,
 				B67CFB14290EBBA3006DFEA2 /* 030-autorelease-use */,
 				B619278E290FF62B003113C8 /* 031-arc-use */,
+				B6AA1CF02911381B003AC0EB /* 032-block */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -267,6 +266,14 @@
 				B67CFB1B290EBD77006DFEA2 /* Student.m */,
 			);
 			path = "030-autorelease-use";
+			sourceTree = "<group>";
+		};
+		B6AA1CF02911381B003AC0EB /* 032-block */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA1CF12911383E003AC0EB /* main.m */,
+			);
+			path = "032-block";
 			sourceTree = "<group>";
 		};
 		B6C042DD28A8E5F400BE5730 /* 020-category */ = {
@@ -372,10 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6192795290FF887003113C8 /* Human.h in Sources */,
-				B6192796290FF887003113C8 /* Human.m in Sources */,
-				B6192799290FFA41003113C8 /* Bird.m in Sources */,
-				B6192794290FF7AA003113C8 /* main.m in Sources */,
+				B6AA1CF22911383E003AC0EB /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
