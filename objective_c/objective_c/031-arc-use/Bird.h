@@ -9,8 +9,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@class Human;
+
 @interface Bird : NSObject
+
 @property (nonatomic, strong) NSString* name;
+
+@property (nonatomic, weak) Human* human;
+
 @end
 
 NS_ASSUME_NONNULL_END

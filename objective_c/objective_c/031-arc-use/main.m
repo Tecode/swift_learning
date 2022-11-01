@@ -12,7 +12,7 @@
 /**
  ARC的判断准则：只要没有强指针指向对象，就会释放
  
- 1、ARC特点
+ 1、ARC特点：
      1.不允许调用release、retain、retainCount
      2.允许重写dealloc，但是不允许调用[super dealloc]
      3.@property参数
@@ -23,13 +23,17 @@
  指针分2种：
      1.强指针：默认情况下，所有指针都是强指针 __strong
      2.弱指针：__weak
+ 
+ 循环引用：
+ 1.ARC：一端用strong，另一端用weak
+ 2.非ARC：一端用retain，一端用assign
  */
 
 int main() {
     Human *human = [[Human alloc] init];
     Bird *bird = [[Bird alloc] init];
     human.bird = bird;
-    bird = nil;
-    NSLog(@"%s", human.bird);
+    bird.human = human;
+    NSLog(@"OK");
     return 0;
 }
