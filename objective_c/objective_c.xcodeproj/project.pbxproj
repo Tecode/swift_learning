@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6AA1CF22911383E003AC0EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AA1CF12911383E003AC0EB /* main.m */; };
+		B6AA1CF5291140E9003AC0EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AA1CF4291140E9003AC0EB /* main.m */; };
+		B6AA1CF929114231003AC0EB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AA1CF829114231003AC0EB /* Student.m */; };
+		B6B822542946165C0049601F /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B822532946165C0049601F /* Animal.m */; };
+		B6B822572946185F0049601F /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B822562946185F0049601F /* Bird.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +77,16 @@
 		B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "016-@synthesize&@property.m"; sourceTree = "<group>"; };
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
 		B6AA1CF12911383E003AC0EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6AA1CF4291140E9003AC0EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6AA1CF629114170003AC0EB /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B6AA1CF729114231003AC0EB /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		B6AA1CF829114231003AC0EB /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		B6B8225029460FCF0049601F /* Human002.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human002.h; sourceTree = "<group>"; };
+		B6B82251294612CD0049601F /* Human003.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human003.h; sourceTree = "<group>"; };
+		B6B822522946165C0049601F /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		B6B822532946165C0049601F /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		B6B822552946185F0049601F /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		B6B822562946185F0049601F /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "018-构造方法.m"; sourceTree = "<group>"; };
 		B6C042DB28A8E3F300BE5730 /* 019-自定义构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "019-自定义构造方法.m"; sourceTree = "<group>"; };
 		B6C042DE28A8E63100BE5730 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -193,6 +206,7 @@
 				B67CFB14290EBBA3006DFEA2 /* 030-autorelease-use */,
 				B619278E290FF62B003113C8 /* 031-arc-use */,
 				B6AA1CF02911381B003AC0EB /* 032-block */,
+				B6AA1CF3291140C5003AC0EB /* 033-protocol */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -274,6 +288,23 @@
 				B6AA1CF12911383E003AC0EB /* main.m */,
 			);
 			path = "032-block";
+			sourceTree = "<group>";
+		};
+		B6AA1CF3291140C5003AC0EB /* 033-protocol */ = {
+			isa = PBXGroup;
+			children = (
+				B6AA1CF4291140E9003AC0EB /* main.m */,
+				B6AA1CF629114170003AC0EB /* Human.h */,
+				B6AA1CF729114231003AC0EB /* Student.h */,
+				B6AA1CF829114231003AC0EB /* Student.m */,
+				B6B8225029460FCF0049601F /* Human002.h */,
+				B6B82251294612CD0049601F /* Human003.h */,
+				B6B822522946165C0049601F /* Animal.h */,
+				B6B822532946165C0049601F /* Animal.m */,
+				B6B822552946185F0049601F /* Bird.h */,
+				B6B822562946185F0049601F /* Bird.m */,
+			);
+			path = "033-protocol";
 			sourceTree = "<group>";
 		};
 		B6C042DD28A8E5F400BE5730 /* 020-category */ = {
@@ -379,7 +410,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6AA1CF22911383E003AC0EB /* main.m in Sources */,
+				B6B822542946165C0049601F /* Animal.m in Sources */,
+				B6AA1CF5291140E9003AC0EB /* main.m in Sources */,
+				B6B822572946185F0049601F /* Bird.m in Sources */,
+				B6AA1CF929114231003AC0EB /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
