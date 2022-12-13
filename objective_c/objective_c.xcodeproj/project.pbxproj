@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6AA1CF5291140E9003AC0EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AA1CF4291140E9003AC0EB /* main.m */; };
-		B6AA1CF929114231003AC0EB /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AA1CF829114231003AC0EB /* Student.m */; };
-		B6B822542946165C0049601F /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B822532946165C0049601F /* Animal.m */; };
-		B6B822572946185F0049601F /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B822562946185F0049601F /* Bird.m */; };
+		B6B8225B294627DB0049601F /* Human.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8225A294627DB0049601F /* Human.m */; };
+		B6B8225D294627FA0049601F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8225C294627FA0049601F /* main.m */; };
+		B6B82261294629C20049601F /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B82260294629C20049601F /* Ticket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -87,6 +86,12 @@
 		B6B822532946165C0049601F /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		B6B822552946185F0049601F /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
 		B6B822562946185F0049601F /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		B6B82259294627DB0049601F /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
+		B6B8225A294627DB0049601F /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
+		B6B8225C294627FA0049601F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6B8225E294628F00049601F /* AngentProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AngentProtocol.h; sourceTree = "<group>"; };
+		B6B8225F294629C20049601F /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		B6B82260294629C20049601F /* Ticket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
 		B6C042D928A8CE8D00BE5730 /* 018-构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "018-构造方法.m"; sourceTree = "<group>"; };
 		B6C042DB28A8E3F300BE5730 /* 019-自定义构造方法.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "019-自定义构造方法.m"; sourceTree = "<group>"; };
 		B6C042DE28A8E63100BE5730 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -207,6 +212,7 @@
 				B619278E290FF62B003113C8 /* 031-arc-use */,
 				B6AA1CF02911381B003AC0EB /* 032-block */,
 				B6AA1CF3291140C5003AC0EB /* 033-protocol */,
+				B6B82258294626490049601F /* 034-protocol-agent */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -305,6 +311,19 @@
 				B6B822562946185F0049601F /* Bird.m */,
 			);
 			path = "033-protocol";
+			sourceTree = "<group>";
+		};
+		B6B82258294626490049601F /* 034-protocol-agent */ = {
+			isa = PBXGroup;
+			children = (
+				B6B82259294627DB0049601F /* Human.h */,
+				B6B8225A294627DB0049601F /* Human.m */,
+				B6B8225C294627FA0049601F /* main.m */,
+				B6B8225E294628F00049601F /* AngentProtocol.h */,
+				B6B8225F294629C20049601F /* Ticket.h */,
+				B6B82260294629C20049601F /* Ticket.m */,
+			);
+			path = "034-protocol-agent";
 			sourceTree = "<group>";
 		};
 		B6C042DD28A8E5F400BE5730 /* 020-category */ = {
@@ -410,10 +429,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6B822542946165C0049601F /* Animal.m in Sources */,
-				B6AA1CF5291140E9003AC0EB /* main.m in Sources */,
-				B6B822572946185F0049601F /* Bird.m in Sources */,
-				B6AA1CF929114231003AC0EB /* Student.m in Sources */,
+				B6B8225D294627FA0049601F /* main.m in Sources */,
+				B6B8225B294627DB0049601F /* Human.m in Sources */,
+				B6B82261294629C20049601F /* Ticket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
