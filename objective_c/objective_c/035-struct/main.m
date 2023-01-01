@@ -20,6 +20,11 @@ int main() {
     NSPoint point01 = NSMakePoint(20, 30);
     NSPoint point02 = CGPointMake(20, 30);
     
+    CGRect react = CGRectMake(10, 20, 30, 40);
+    
+    
+    NSLog(@"%@", NSStringFromRect(react)); // {{10, 20}, {30, 40}}
+    
     NSString *name = @"haoxuan";
     NSRange range04 = [name rangeOfString:@"xu"];
     
