@@ -21,6 +21,14 @@ int main() {
     NSPoint point02 = CGPointMake(20, 30);
     
     CGRect react = CGRectMake(10, 20, 30, 40);
+    CGRect react2 = { CGPointZero, CGSizeMake(10, 20) };
+    CGRect react3 = { {10, 20}, CGSizeMake(10, 20) };
+    
+    NSLog(@"%d", CGRectEqualToRect(react, react2)); // 0
+    NSLog(@"%d", CGRectContainsPoint(react, CGPointMake(10, 20))); // 1
+
+
+
     
     
     NSLog(@"%@", NSStringFromRect(react)); // {{10, 20}, {30, 40}}
