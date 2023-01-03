@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60BE09729628DE6009E663A /* 036-NSString.m in Sources */ = {isa = PBXBuildFile; fileRef = B60BE09629628DE6009E663A /* 036-NSString.m */; };
+		B60BE0992962ED76009E663A /* 037-NSMutableString.m in Sources */ = {isa = PBXBuildFile; fileRef = B60BE0982962ED76009E663A /* 037-NSMutableString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +26,7 @@
 		B602C8C72858AFB600626400 /* 014-NSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "014-NSString.m"; sourceTree = "<group>"; };
 		B60BE09429607F6B009E663A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B60BE09629628DE6009E663A /* 036-NSString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "036-NSString.m"; sourceTree = "<group>"; };
+		B60BE0982962ED76009E663A /* 037-NSMutableString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "037-NSMutableString.m"; sourceTree = "<group>"; };
 		B610C0E5290950BF00C43A4B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B619278F290FF65D003113C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6192791290FF6D1003113C8 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
@@ -223,6 +224,7 @@
 				B6B82258294626490049601F /* 034-protocol-agent */,
 				B60BE09329607EEC009E663A /* 035-struct */,
 				B60BE09629628DE6009E663A /* 036-NSString.m */,
+				B60BE0982962ED76009E663A /* 037-NSMutableString.m */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -439,7 +441,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60BE09729628DE6009E663A /* 036-NSString.m in Sources */,
+				B60BE0992962ED76009E663A /* 037-NSMutableString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,7 +8,9 @@
 #import <Foundation/Foundation.h>
 
 int main() {
-//    字符串创建
+//    NSString不可变字符串
+//    NSMutableString可变字符串
+    //    字符串创建
     NSString *str01 = @"haoxuan1";
 //    NSString *str02 = [[NSString alloc] initWithString: @"haoxuan2"];
     NSString *str03 = [[NSString alloc] initWithFormat: @"%d", 88];
