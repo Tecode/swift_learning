@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B60BE0992962ED76009E663A /* 037-NSMutableString.m in Sources */ = {isa = PBXBuildFile; fileRef = B60BE0982962ED76009E663A /* 037-NSMutableString.m */; };
+		B6F30447296462AC00D25086 /* 038-NSArray.m in Sources */ = {isa = PBXBuildFile; fileRef = B6F30446296462AC00D25086 /* 038-NSArray.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -118,6 +118,7 @@
 		B6E1DF1E28D8812B00DADEBE /* Car.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		B6E4749E2833B59400D273F0 /* 011-继承和组合.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "011-继承和组合.m"; sourceTree = "<group>"; };
 		B6E474A02833C51900D273F0 /* 012-多态.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "012-多态.m"; sourceTree = "<group>"; };
+		B6F30446296462AC00D25086 /* 038-NSArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "038-NSArray.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -225,6 +226,7 @@
 				B60BE09329607EEC009E663A /* 035-struct */,
 				B60BE09629628DE6009E663A /* 036-NSString.m */,
 				B60BE0982962ED76009E663A /* 037-NSMutableString.m */,
+				B6F30446296462AC00D25086 /* 038-NSArray.m */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -441,7 +443,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B60BE0992962ED76009E663A /* 037-NSMutableString.m in Sources */,
+				B6F30447296462AC00D25086 /* 038-NSArray.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
