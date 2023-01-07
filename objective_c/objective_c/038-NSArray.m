@@ -25,6 +25,33 @@ int main() {
 //    遍历
     for(id data in array) {
         NSLog(@"for遍历数组：%@", data);
+        NSLog(@"索引位置：%ld", [array indexOfObject: data]);
+    }
+//    enumerateObjectsUsingBlock遍历
+    [array enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        NSLog(@"%ld---%@", idx,obj);
+        if (idx ==0 ) {
+            *stop = YES;
+        }
+    }];
+//    *stop本质
+    void (^loopBlock)(id, NSUInteger, BOOL *) = ^(id obj, NSUInteger index, BOOL *stop){
+        NSLog(@"loopBlock:%@", obj);
+        if (index == 0) {
+            *stop = YES;
+        }
+    };
+    
+    for (int index = 0; index < [array count]; index++) {
+//        用来标记是否停止遍历
+        BOOL isStop = NO;
+        id obj = array[index];
+        loopBlock(obj, index, &isStop);
+        NSLog(@"%d", index);
+        
+        if (isStop) {
+            break;
+        }
     }
     return 0;
 }
