@@ -58,3 +58,10 @@ int main(){
     return 0;
 }
 
+//2023-01-08 22:14:28.265137+0800 objective_c[17542:470021] objective_c/objective_c/027-property-memory/main.m = 文件行数：22
+//2023-01-08 22:14:28.265190+0800 objective_c[17542:470021] objective_c/objective_c/027-property-memory/Human.m = 文件行数：23
+//2023-01-08 22:14:28.265240+0800 objective_c[17542:470021] objective_c/objective_c/002_other_main.m = 文件行数：16
+//2023-01-08 22:14:28.265375+0800 objective_c[17542:470021] objective_c/objective_c/025-multiple-memory-management/Book.m = 文件行数：16
+//2023-01-08 22:14:28.265450+0800 objective_c[17542:470021] objective_c/objective_c/025-multiple-memory-management/main.m = 文件行数：41
+//2023-01-08 22:14:28.265517+0800 objective_c[17542:470021] objective_c/objective_c/025-multiple-memory-management/Human.m = 文件行数：27
+//2023-01-08 22:14:28.265596+0800 objective_c[17542:470021] 文件总行数：4794

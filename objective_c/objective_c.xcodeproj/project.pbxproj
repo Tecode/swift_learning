@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6AC49122969CA8300A0388A /* 039-CodeLine.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AC49112969CA8300A0388A /* 039-CodeLine.m */; };
+		B6AC4916296B0D0C00A0388A /* 041-NSSet.m in Sources */ = {isa = PBXBuildFile; fileRef = B6AC4915296B0D0C00A0388A /* 041-NSSet.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +82,8 @@
 		B6AA1CF729114231003AC0EB /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		B6AA1CF829114231003AC0EB /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		B6AC49112969CA8300A0388A /* 039-CodeLine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "039-CodeLine.m"; sourceTree = "<group>"; };
+		B6AC4913296B09BC00A0388A /* 040-NSMutableArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "040-NSMutableArray.m"; sourceTree = "<group>"; };
+		B6AC4915296B0D0C00A0388A /* 041-NSSet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "041-NSSet.m"; sourceTree = "<group>"; };
 		B6B8225029460FCF0049601F /* Human002.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human002.h; sourceTree = "<group>"; };
 		B6B82251294612CD0049601F /* Human003.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human003.h; sourceTree = "<group>"; };
 		B6B822522946165C0049601F /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
@@ -229,6 +231,8 @@
 				B60BE0982962ED76009E663A /* 037-NSMutableString.m */,
 				B6F30446296462AC00D25086 /* 038-NSArray.m */,
 				B6AC49112969CA8300A0388A /* 039-CodeLine.m */,
+				B6AC4913296B09BC00A0388A /* 040-NSMutableArray.m */,
+				B6AC4915296B0D0C00A0388A /* 041-NSSet.m */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -445,7 +449,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6AC49122969CA8300A0388A /* 039-CodeLine.m in Sources */,
+				B6AC4916296B0D0C00A0388A /* 041-NSSet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
