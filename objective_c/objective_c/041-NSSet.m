@@ -7,6 +7,10 @@
 
 #import <Foundation/Foundation.h>
 
+// NSSet和NSrray的对比
+// 1、共同点
+// 都是集合，都能存放OC对象
+// 只能存放OC对象，不能存放非OC对着（基本数据类型：int、char、float等、结构体、枚举）
 int main () {
 //    NSSet是无序的
     NSSet *set01 = [NSSet set];
