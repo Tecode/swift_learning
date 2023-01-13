@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6251172296FD6B200B4C961 /* 042-NSDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = B6251171296FD6B200B4C961 /* 042-NSDictionary.m */; };
+		B6A8C2A4297105C500C74472 /* 045-NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8C2A3297105C500C74472 /* 045-NSDate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +34,8 @@
 		B6192797290FFA41003113C8 /* Bird.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
 		B6192798290FFA41003113C8 /* Bird.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
 		B6251171296FD6B200B4C961 /* 042-NSDictionary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "042-NSDictionary.m"; sourceTree = "<group>"; };
+		B625117329700FA000B4C961 /* 043-NSNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "043-NSNumber.m"; sourceTree = "<group>"; };
+		B62511752970127800B4C961 /* 044-NSValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "044-NSValue.m"; sourceTree = "<group>"; };
 		B62E4AD7290AA83300E58A29 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B62E4AD9290AA8C300E58A29 /* IDCard.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDCard.h; sourceTree = "<group>"; };
 		B62E4ADA290AA8C300E58A29 /* IDCard.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IDCard.m; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 		B684FCDB2823B0CE00503A20 /* 007-OC类方法参数.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "007-OC类方法参数.m"; sourceTree = "<group>"; };
 		B691E1E728A1466A00B2948B /* 016-@synthesize&@property.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "016-@synthesize&@property.m"; sourceTree = "<group>"; };
 		B691E1E928A1483C00B2948B /* 017-id.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "017-id.m"; sourceTree = "<group>"; };
+		B6A8C2A3297105C500C74472 /* 045-NSDate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "045-NSDate.m"; sourceTree = "<group>"; };
 		B6AA1CF12911383E003AC0EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6AA1CF4291140E9003AC0EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B6AA1CF629114170003AC0EB /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
@@ -235,6 +238,9 @@
 				B6AC4913296B09BC00A0388A /* 040-NSMutableArray.m */,
 				B6AC4915296B0D0C00A0388A /* 041-NSSet.m */,
 				B6251171296FD6B200B4C961 /* 042-NSDictionary.m */,
+				B625117329700FA000B4C961 /* 043-NSNumber.m */,
+				B62511752970127800B4C961 /* 044-NSValue.m */,
+				B6A8C2A3297105C500C74472 /* 045-NSDate.m */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -451,7 +457,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6251172296FD6B200B4C961 /* 042-NSDictionary.m in Sources */,
+				B6A8C2A4297105C500C74472 /* 045-NSDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

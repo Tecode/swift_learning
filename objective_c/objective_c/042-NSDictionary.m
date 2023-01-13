@@ -7,6 +7,24 @@
 
 #import <Foundation/Foundation.h>
 
+//NSArray List
+//NSSet Set
+//NSDictionary Map
+
+//集合
+//1、NSArray\NSMutableArray
+//有序
+//快速创建@[]
+//快速访问元素：数组名[index]
+//
+//2、NSSet\NSMutableSet
+//无序
+
+//3、NSDictionary\NSMutableDictionary
+//无序
+//快速创建（不可变）@{key:value}
+//快速访问元素：字典名[key]
+
 int main() {
     NSMutableDictionary *mutableDictionary = [NSMutableDictionary dictionary];
     [mutableDictionary setObject:@"haoxuan" forKey:@"name"];
@@ -24,10 +42,19 @@ int main() {
 //    字典遍历
 //    第一种方式
     NSArray *allKey = [dictionary03 allKeys];
-    for (int index = 0; index < dictionary03.count; index ++) {
-        NSLog(@"dictionary03 value");
+    for (int index = 0; index < allKey.count; index ++) {
+        NSLog(@"dictionary03 value %@", [dictionary03 objectForKey: allKey[index]]);
     }
-    NSLog(@"%@", [dictionary03 allKeys]);
+//    2023-01-12 17:23:58.192749+0800 objective_c[11492:214633] dictionary03 value 成都市新都区
+//    2023-01-12 17:23:58.192789+0800 objective_c[11492:214633] dictionary03 value haouxan
+//    第二种方式，枚举所有项
+    [dictionary03 enumerateKeysAndObjectsUsingBlock:^(id  _Nonnull key, id  _Nonnull obj, BOOL * _Nonnull stop) {
+        NSLog(@"KEY:%@ Value:%@", key, obj);
+    }];
+    
+//    2023-01-12 17:23:58.192807+0800 objective_c[11492:214633] KEY:home Value:成都市新都区
+//    2023-01-12 17:23:58.192821+0800 objective_c[11492:214633] KEY:name Value:haouxan
+//    NSLog(@"%@", [dictionary03 allKeys]);
     NSLog(@"dictionary01-%@", dictionary01);
     NSLog(@"dictionary02-%@", dictionary02);
     NSLog(@"dictionary03-%@", dictionary03);
