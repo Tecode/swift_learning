@@ -7,6 +7,15 @@
 
 #import "ObjectiveHuman.h"
 
-@implementation ObjectiveHuman
+// C语言方法
+int sum(int a, int b) {
+    return a + b;
+}
 
+@implementation ObjectiveHuman
+@synthesize name;
+@synthesize age;
+-(void)run{
+    NSLog(@"来自OC的方法调用%@", self.name);
+}
 @end
