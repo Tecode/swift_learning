@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6A8C2A4297105C500C74472 /* 045-NSDate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6A8C2A3297105C500C74472 /* 045-NSDate.m */; };
+		B6763C9229B0BBF3008C6731 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6763C9129B0BBF3008C6731 /* main.m */; };
+		B6763C9529B0BC55008C6731 /* Human010.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6763C9429B0BC55008C6731 /* Human010.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -68,6 +69,9 @@
 		B6651CDF28D61B77006AF8C7 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
 		B6651CE128D61C01006AF8C7 /* Book.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
 		B6651CE228D61C01006AF8C7 /* Book.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Book.m; sourceTree = "<group>"; };
+		B6763C9129B0BBF3008C6731 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6763C9329B0BC55008C6731 /* objective_c-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "objective_c-Bridging-Header.h"; sourceTree = "<group>"; };
+		B6763C9429B0BC55008C6731 /* Human010.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Human010.swift; sourceTree = "<group>"; };
 		B67CFB0F290EAD04006DFEA2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B67CFB11290EAD2F006DFEA2 /* Human.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Human.h; sourceTree = "<group>"; };
 		B67CFB12290EAD2F006DFEA2 /* Human.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Human.m; sourceTree = "<group>"; };
@@ -241,6 +245,7 @@
 				B625117329700FA000B4C961 /* 043-NSNumber.m */,
 				B62511752970127800B4C961 /* 044-NSValue.m */,
 				B6A8C2A3297105C500C74472 /* 045-NSDate.m */,
+				B6763C9029B0BBAB008C6731 /* 046-OC-swift */,
 			);
 			path = objective_c;
 			sourceTree = "<group>";
@@ -292,6 +297,16 @@
 				B6651CE228D61C01006AF8C7 /* Book.m */,
 			);
 			path = "025-multiple-memory-management";
+			sourceTree = "<group>";
+		};
+		B6763C9029B0BBAB008C6731 /* 046-OC-swift */ = {
+			isa = PBXGroup;
+			children = (
+				B6763C9129B0BBF3008C6731 /* main.m */,
+				B6763C9429B0BC55008C6731 /* Human010.swift */,
+				B6763C9329B0BC55008C6731 /* objective_c-Bridging-Header.h */,
+			);
+			path = "046-OC-swift";
 			sourceTree = "<group>";
 		};
 		B67CFB0E290EACEE006DFEA2 /* 029-autorelease */ = {
@@ -431,6 +446,7 @@
 				TargetAttributes = {
 					B65989C8281BB70C00C7EB51 = {
 						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 					};
 				};
 			};
@@ -457,7 +473,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6A8C2A4297105C500C74472 /* 045-NSDate.m in Sources */,
+				B6763C9229B0BBF3008C6731 /* main.m in Sources */,
+				B6763C9529B0BC55008C6731 /* Human010.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,18 +595,35 @@
 		B65989D1281BB70C00C7EB51 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "objective_c/046-OC-swift/objective_c-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
 		B65989D2281BB70C00C7EB51 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_STYLE = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "objective_c/046-OC-swift/objective_c-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};

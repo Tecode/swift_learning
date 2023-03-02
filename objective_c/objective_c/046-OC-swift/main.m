@@ -6,3 +6,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "objective_c-Swift.h"
+
+int main() {
+    Human010 *human = [[Human010 alloc] initWithName:@"haoxuan" age:23];
+    [human run];
+    NSLog(@"OC");
+    return 0;
+}
