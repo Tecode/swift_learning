@@ -61,6 +61,7 @@
 		B6DC539027A976A800CB8BE5 /* require、deinit、可失败初始化器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "require、deinit、可失败初始化器.swift"; sourceTree = "<group>"; };
 		B6DC539227A97DBD00CB8BE5 /* 可选链.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "可选链.swift"; sourceTree = "<group>"; };
 		B6DC539427A9800400CB8BE5 /* 协议、元类型.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "协议、元类型.swift"; sourceTree = "<group>"; };
+		B6E74DCD29B77951009FFECA /* extent_get_set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extent_get_set.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +130,7 @@
 				B60653F5281281B8004C1895 /* 字面量协议、模式匹配、条件编译.swift */,
 				B60653F72812B34B004C1895 /* OC到Swift、函数式编程.swift */,
 				B6763C9629B0C31C008C6731 /* string.swift */,
+				B6E74DCD29B77951009FFECA /* extent_get_set.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
