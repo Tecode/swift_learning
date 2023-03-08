@@ -7,39 +7,20 @@
 
 import Foundation
 
-var name = "haoxuan"
-var list: [Int] = [0, 67]
-name.insert("_", at: name.startIndex)
-
-name.insert(contentsOf: "hh", at: name.endIndex)
-
-name.insert("-", at: name.firstIndex(of: "o")!)
-
-name.append(contentsOf: "IOE")
-print(name)
-// _ha-oxuanhhIOE
-print(list)
+// GCD
+//DispatchQueue.global().async {
+//    print(Thread.current)
+////    回到主线程
+////    DispatchQueue.main.async {
+////        print(Thread.current)
+////    }
+//}
+//let item = DispatchWorkItem{
+//    print("10", Thread.current)
+//}
+//DispatchQueue.global().async(execute: item)
+//item.notify(queue: DispatchQueue.main){
+//    print("执行完一个进程回到主线程")
+//}
 print("OK")
-
-// 对象存储属性
-class Human012 {
-    
-}
-
-var value = 10
-
-extension Human012 {
-    var age: Int {
-        get {
-            objc_getAssociatedObject(self, &value) as! Int
-        }
-        set {
-            objc_setAssociatedObject(self, &value, newValue, .OBJC_ASSOCIATION_ASSIGN)
-        }
-    }
-}
-
-var human = Human012()
-human.age = 20
-print(human.age)
-// 20
+//51:42

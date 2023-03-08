@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B66B47A729B878DC00DD2633 /* async.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66B47A629B878DC00DD2633 /* async.swift */; };
 		B6763C9829B0C3AD008C6731 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E531E276AE59E00555B48 /* main.swift */; };
 		B6B2A5932779F54F004C1C07 /* memory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B68E5325276B116900555B48 /* memory.swift */; };
+		B6E74DD029B77AD6009FFECA /* multithreading.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E74DCF29B77AD6009FFECA /* multithreading.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +38,7 @@
 		B662F1AE27AE618100E283AF /* 扩展、协议扩展.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "扩展、协议扩展.swift"; sourceTree = "<group>"; };
 		B662F1B027AE757300E283AF /* getter\setter、协议访问控制.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "getter\\setter、协议访问控制.swift"; sourceTree = "<group>"; };
 		B662F1B227AED37D00E283AF /* 内存管理.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "内存管理.swift"; sourceTree = "<group>"; };
+		B66B47A629B878DC00DD2633 /* async.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = async.swift; sourceTree = "<group>"; };
 		B6763C9629B0C31C008C6731 /* string.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = string.swift; sourceTree = "<group>"; };
 		B67BD54C278DBD3900C4287A /* 延迟存储属性.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "延迟存储属性.swift"; sourceTree = "<group>"; };
 		B67BD54F278DC0D300C4287A /* 属性观察器.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "属性观察器.swift"; sourceTree = "<group>"; };
@@ -62,6 +65,7 @@
 		B6DC539227A97DBD00CB8BE5 /* 可选链.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "可选链.swift"; sourceTree = "<group>"; };
 		B6DC539427A9800400CB8BE5 /* 协议、元类型.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "协议、元类型.swift"; sourceTree = "<group>"; };
 		B6E74DCD29B77951009FFECA /* extent_get_set.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extent_get_set.swift; sourceTree = "<group>"; };
+		B6E74DCF29B77AD6009FFECA /* multithreading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = multithreading.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 				B60653F72812B34B004C1895 /* OC到Swift、函数式编程.swift */,
 				B6763C9629B0C31C008C6731 /* string.swift */,
 				B6E74DCD29B77951009FFECA /* extent_get_set.swift */,
+				B6E74DCF29B77AD6009FFECA /* multithreading.swift */,
+				B66B47A629B878DC00DD2633 /* async.swift */,
 			);
 			path = swift_study;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66B47A729B878DC00DD2633 /* async.swift in Sources */,
+				B6E74DD029B77AD6009FFECA /* multithreading.swift in Sources */,
 				B6763C9829B0C3AD008C6731 /* main.swift in Sources */,
 				B6B2A5932779F54F004C1C07 /* memory.swift in Sources */,
 			);
