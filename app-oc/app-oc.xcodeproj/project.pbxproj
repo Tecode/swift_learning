@@ -14,6 +14,7 @@
 		B66F6F8C29F11DFE0097367F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66F6F8B29F11DFE0097367F /* Assets.xcassets */; };
 		B66F6F8F29F11DFE0097367F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F6F8D29F11DFE0097367F /* LaunchScreen.storyboard */; };
 		B66F6F9229F11DFE0097367F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F9129F11DFE0097367F /* main.m */; };
+		B66F6F9B29F128010097367F /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F9A29F128010097367F /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		B66F6F8E29F11DFE0097367F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66F6F9029F11DFE0097367F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66F6F9129F11DFE0097367F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B66F6F9929F128010097367F /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		B66F6F9A29F128010097367F /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +64,8 @@
 		B66F6F7E29F11DFC0097367F /* app-oc */ = {
 			isa = PBXGroup;
 			children = (
+				B66F6F9C29F12BCE0097367F /* controller */,
+				B66F6F9829F1279B0097367F /* view */,
 				B66F6F7F29F11DFC0097367F /* AppDelegate.h */,
 				B66F6F8029F11DFC0097367F /* AppDelegate.m */,
 				B66F6F8229F11DFC0097367F /* SceneDelegate.h */,
@@ -74,6 +79,22 @@
 				B66F6F9129F11DFE0097367F /* main.m */,
 			);
 			path = "app-oc";
+			sourceTree = "<group>";
+		};
+		B66F6F9829F1279B0097367F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				B66F6F9929F128010097367F /* CustomView.h */,
+				B66F6F9A29F128010097367F /* CustomView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		B66F6F9C29F12BCE0097367F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B66F6F9B29F128010097367F /* CustomView.m in Sources */,
 				B66F6F8729F11DFC0097367F /* ViewController.m in Sources */,
 				B66F6F8129F11DFC0097367F /* AppDelegate.m in Sources */,
 				B66F6F9229F11DFE0097367F /* main.m in Sources */,
