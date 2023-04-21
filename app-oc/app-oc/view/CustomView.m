@@ -14,7 +14,7 @@
     if (self) {
         
     }
-    NSLog(@"CustomView init 初始化");
+    NSLog(@"CustomView init 初始化OK");
     return self;
 }
 

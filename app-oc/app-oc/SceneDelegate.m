@@ -18,6 +18,42 @@
     // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
     // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
     // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+    
+    // 将根视图控制器设置为Scene的根视图控制器
+    UIWindowScene *windowScene = (UIWindowScene *)scene;
+    self.window = [[UIWindow alloc] initWithFrame:windowScene.coordinateSpace.bounds];
+    self.window.windowScene = windowScene;
+    
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    UIViewController *controller01 = [[UIViewController alloc] init];
+    controller01.view.backgroundColor = [UIColor whiteColor];
+    controller01.tabBarItem.title = @"首页";
+    controller01.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
+    controller01.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
+    
+    UIViewController *controller02 = [[UIViewController alloc] init];
+    controller02.view.backgroundColor = [UIColor purpleColor];
+    controller02.tabBarItem.title = @"视频";
+    controller02.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
+    controller02.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/video_selected@2x.png"];
+    
+    UIViewController *controller03 = [[UIViewController alloc] init];
+    controller03.view.backgroundColor = [UIColor orangeColor];
+    controller03.tabBarItem.title = @"推荐";
+    controller03.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/like@2x.png"];
+    controller03.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/like_selected@2x.png"];
+    
+    UIViewController *controller04 = [[UIViewController alloc] init];
+    controller04.view.backgroundColor = [UIColor systemPinkColor];
+    controller04.tabBarItem.title = @"我的";
+    controller04.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
+    controller04.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
+    
+    [tabBarController setViewControllers:@[controller01,controller02,controller03,controller04]];
+    
+    self.window.rootViewController = tabBarController;
+    [self.window makeKeyAndVisible];
 }
 
 
