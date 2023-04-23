@@ -76,9 +76,21 @@
         CustomView *customView = [[CustomView alloc] init];
         customView.frame = CGRectMake(200.0, 200.0, 100.0, 100.0);
         customView.backgroundColor = [UIColor blueColor];
+        //    点击绿色块跳转页面
+        UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc]  initWithTarget: self action:@selector(pushController)];
+        [customView addGestureRecognizer:tapGesture];
         customView;
     })];
 }
 
+- (void) pushController
+{
+    UIViewController *viewControoler = [[UIViewController alloc] init];
+    viewControoler.navigationItem.title = @"内容";
+    viewControoler.view.backgroundColor = [UIColor whiteColor];
+    viewControoler.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"右侧标题" style:UIBarButtonItemStylePlain target:self action:nil];
+    
+    [self.navigationController pushViewController:viewControoler animated:YES];
+}
 
 @end

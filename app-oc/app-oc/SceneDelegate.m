@@ -6,6 +6,7 @@
 //
 
 #import "SceneDelegate.h"
+#import "ViewController.h"
 
 @interface SceneDelegate ()
 
@@ -26,11 +27,15 @@
     
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
-    UIViewController *controller01 = [[UIViewController alloc] init];
-    controller01.view.backgroundColor = [UIColor whiteColor];
-    controller01.tabBarItem.title = @"首页";
-    controller01.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
-    controller01.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
+    //    可以进行push路由的组件
+    ViewController *viewController = [[ViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:viewController];
+    
+    //    UIViewController *controller01 = [[UIViewController alloc] init];
+    navigationController.view.backgroundColor = [UIColor whiteColor];
+    navigationController.tabBarItem.title = @"首页";
+    navigationController.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/home@2x.png"];
+    navigationController.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/home_selected@2x.png"];
     
     UIViewController *controller02 = [[UIViewController alloc] init];
     controller02.view.backgroundColor = [UIColor purpleColor];
@@ -50,7 +55,7 @@
     controller04.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/page@2x.png"];
     controller04.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/page_selected@2x.png"];
     
-    [tabBarController setViewControllers:@[controller01,controller02,controller03,controller04]];
+    [tabBarController setViewControllers:@[navigationController,controller02,controller03,controller04]];
     
     self.window.rootViewController = tabBarController;
     [self.window makeKeyAndVisible];
