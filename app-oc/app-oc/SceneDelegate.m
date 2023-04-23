@@ -8,7 +8,7 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
 
-@interface SceneDelegate ()
+@interface SceneDelegate ()<UITabBarControllerDelegate>
 
 @end
 
@@ -57,8 +57,18 @@
     
     [tabBarController setViewControllers:@[viewController,controller02,controller03,controller04]];
     
+    //    tabBar切换时触发
+    tabBarController.delegate = self;
+    
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+}
+
+//    tabBar切换时触发
+- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController
+{
+    NSLog(@"tabBarController切换了");
+    return YES;
 }
 
 
