@@ -8,6 +8,7 @@
 #import "SceneDelegate.h"
 #import "ViewController.h"
 #import "controller/VideoViewController.h"
+#import "controller/RecommendeViewController.h"
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
 
@@ -40,11 +41,7 @@
     
     UIViewController *controller02 = [[VideoViewController alloc] init];
     
-    UIViewController *controller03 = [[UIViewController alloc] init];
-    controller03.view.backgroundColor = [UIColor orangeColor];
-    controller03.tabBarItem.title = @"推荐";
-    controller03.tabBarItem.image = [UIImage imageNamed:@"icon.bundle/like@2x.png"];
-    controller03.tabBarItem.selectedImage = [UIImage imageNamed:@"icon.bundle/like_selected@2x.png"];
+    UIViewController *controller03 = [[RecommendeViewController alloc] init];
     
     UIViewController *controller04 = [[UIViewController alloc] init];
     controller04.view.backgroundColor = [UIColor systemPinkColor];
