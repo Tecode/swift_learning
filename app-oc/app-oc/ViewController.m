@@ -7,6 +7,7 @@
 
 #import "ViewController.h"
 #import "view/CustomView.h"
+#import "view/HomeTableViewCell.h"
 
 @interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -103,13 +104,14 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     //    复用回收tabViewCell
-    UITableViewCell *tabViewCell = [tableView dequeueReusableCellWithIdentifier: @"id"];
+    HomeTableViewCell *tabViewCell = [tableView dequeueReusableCellWithIdentifier: @"id"];
     if (!tabViewCell){
-        tabViewCell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+        tabViewCell = [[HomeTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
     }
-    tabViewCell.textLabel.text = [NSString stringWithFormat:@"主标题%ld", indexPath.row + 1];
-    tabViewCell.detailTextLabel.text = @"副标题";
-    tabViewCell.imageView.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
+    [tabViewCell layoutTableViewCell];
+    //    tabViewCell.textLabel.text = [NSString stringWithFormat:@"主标题%ld", indexPath.row + 1];
+    //    tabViewCell.detailTextLabel.text = @"副标题";
+    //    tabViewCell.imageView.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
     return tabViewCell;
 }
 
