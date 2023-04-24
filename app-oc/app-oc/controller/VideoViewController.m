@@ -27,6 +27,10 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+    //    Layout布局
+    layout.minimumLineSpacing = 10;
+    layout.minimumInteritemSpacing = 10;
+    layout.itemSize = CGSizeMake((self.view.frame.size.width - 10) / 2, 300);
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     collectionView.delegate = self;
     collectionView.dataSource = self;
@@ -48,6 +52,13 @@
 //    }
     cell.backgroundColor = [UIColor redColor];
     return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row %3 == 0) {
+        return CGSizeMake(self.view.frame.size.width, 200);
+    }
+    return CGSizeMake((self.view.frame.size.width - 10) / 2, 300);
 }
 
 @end
