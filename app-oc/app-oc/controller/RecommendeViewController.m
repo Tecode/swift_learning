@@ -7,7 +7,7 @@
 
 #import "RecommendeViewController.h"
 
-@interface RecommendeViewController ()<UIScrollViewDelegate>
+@interface RecommendeViewController ()<UIScrollViewDelegate, UIGestureRecognizerDelegate>
 
 @end
 
@@ -34,6 +34,15 @@
         [scrollView addSubview:({
             UIView *view = [[UIView alloc] initWithFrame:CGRectMake(scrollView.bounds.size.width * index, 0, scrollView.bounds.size.width, scrollView.bounds.size.height)];
             view.backgroundColor = [colorArrry objectAtIndex:index];
+            //            给view添加手势，让页面可以点击输出结果
+            [view addSubview:({
+                UIView *innerView = [[UIView alloc] initWithFrame:CGRectMake((view.frame.size.width - 100)/2, (view.frame.size.width -100)/2, 100, 100)];
+                innerView.backgroundColor = [UIColor whiteColor];
+                UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleViewCLick)];
+                [innerView addGestureRecognizer:tap];
+                tap.delegate = self;
+                innerView;
+            })];
             view;
         })];
     }
@@ -47,16 +56,27 @@
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
 {
-//    NSLog(@"ScrollView 滚动");
+    //    NSLog(@"ScrollView 滚动");
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-        NSLog(@"开始拖拽");
+    NSLog(@"开始拖拽");
 }
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset
 {
     NSLog(@"完成拖拽");
+}
+
+- (void) handleViewCLick
+{
+    NSLog(@"innerView 被点击");
+}
+
+// UIGestureRecognizerDelegate 是否需要响应手势
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+{
+    return YES;
 }
 
 @end

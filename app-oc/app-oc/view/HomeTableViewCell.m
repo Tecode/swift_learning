@@ -14,6 +14,7 @@
 @property(nonatomic, strong, readwrite) UILabel *commentLabel;
 @property(nonatomic, strong, readwrite) UILabel *timeLabel;
 @property(nonatomic, strong, readwrite) UIImageView *rightImageView;
+@property(nonatomic, strong, readwrite) UIButton *deleteButton;
 
 @end
 
@@ -58,6 +59,16 @@
             self.rightImageView.contentMode = UIViewContentModeScaleAspectFill;
             self.rightImageView;
         })];
+        
+        //        新增一个按钮
+        [self.contentView addSubview:({
+            self.deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(240, 70, 50, 30)];
+            self.deleteButton.backgroundColor = [UIColor redColor];
+            [self.deleteButton setTitle:@"确定" forState:UIControlStateNormal];
+            [self.deleteButton setTitle:@"取消" forState:UIControlStateHighlighted];
+            [self.deleteButton addTarget:self action:@selector(handleButtonClick) forControlEvents:UILayoutPriorityDefaultHigh];
+            self.deleteButton;
+        })];
     }
     return self;
 }
@@ -89,6 +100,11 @@
     [super setSelected:selected animated:animated];
     
     // Configure the view for the selected state
+}
+
+- (void) handleButtonClick
+{
+    NSLog(@"按钮被点击了");
 }
 
 @end
