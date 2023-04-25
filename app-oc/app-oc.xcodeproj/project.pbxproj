@@ -17,6 +17,7 @@
 		B66F6F9B29F128010097367F /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F9A29F128010097367F /* CustomView.m */; };
 		B670BB2829F62E660067F842 /* RecommendeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670BB2729F62E660067F842 /* RecommendeViewController.m */; };
 		B670BB2B29F65DF60067F842 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B670BB2A29F65DF60067F842 /* HomeTableViewCell.m */; };
+		B670BB2E29F6B2E30067F842 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670BB2D29F6B2E30067F842 /* DetailViewController.m */; };
 		B6B8377129F530DE002E9018 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8377029F530DE002E9018 /* VideoViewController.m */; };
 		B6D5D0D729F23914002F938F /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6D5D0D629F23914002F938F /* icon.bundle */; };
 /* End PBXBuildFile section */
@@ -40,6 +41,8 @@
 		B670BB2729F62E660067F842 /* RecommendeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecommendeViewController.m; sourceTree = "<group>"; };
 		B670BB2929F65DF60067F842 /* HomeTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		B670BB2A29F65DF60067F842 /* HomeTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		B670BB2C29F6B2E30067F842 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		B670BB2D29F6B2E30067F842 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B6B8376F29F530DE002E9018 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		B6B8377029F530DE002E9018 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		B6D5D0D629F23914002F938F /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = icon.bundle; path = "../../../../Downloads/geektime-ios-course-master/project/SampleApp/icon.bundle"; sourceTree = "<group>"; };
@@ -111,6 +114,8 @@
 				B6B8377029F530DE002E9018 /* VideoViewController.m */,
 				B670BB2629F62E660067F842 /* RecommendeViewController.h */,
 				B670BB2729F62E660067F842 /* RecommendeViewController.m */,
+				B670BB2C29F6B2E30067F842 /* DetailViewController.h */,
+				B670BB2D29F6B2E30067F842 /* DetailViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -188,6 +193,7 @@
 			files = (
 				B66F6F9B29F128010097367F /* CustomView.m in Sources */,
 				B66F6F8729F11DFC0097367F /* ViewController.m in Sources */,
+				B670BB2E29F6B2E30067F842 /* DetailViewController.m in Sources */,
 				B670BB2B29F65DF60067F842 /* HomeTableViewCell.m in Sources */,
 				B6B8377129F530DE002E9018 /* VideoViewController.m in Sources */,
 				B670BB2829F62E660067F842 /* RecommendeViewController.m in Sources */,
