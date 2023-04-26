@@ -5,18 +5,21 @@
 //  Created by 昊轩 on 2023/4/20.
 //
 
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "view/CustomView.h"
 #import "view/HomeTableViewCell.h"
 #import "controller/DetailViewController.h"
 #import "view/DeleteCellVIew.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, HomeTableCellDelegate>
+@interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, HomeTableCellDelegate>
 @property (atomic, strong, readwrite) UITableView *tabelView;
 @property (atomic, strong, readwrite) NSMutableArray *listData;
 @end
 
-@implementation ViewController
+
+@implementation HomeViewController
+
+# pragma mark 初始化方法
 - (instancetype)init {
     self = [super init];
     if (self) {
@@ -29,6 +32,7 @@
     return  self;
 }
 
+# pragma mark 动画函数
 - (void)viewWillAppear:(BOOL)animated
 {
     [super viewWillAppear:animated];

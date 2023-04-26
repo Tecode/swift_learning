@@ -6,7 +6,7 @@
 //
 
 #import "SceneDelegate.h"
-#import "ViewController.h"
+#import "HomeViewController.h"
 #import "controller/VideoViewController.h"
 #import "controller/RecommendeViewController.h"
 
@@ -30,7 +30,7 @@
     UITabBarController *tabBarController = [[UITabBarController alloc] init];
     
     //    可以进行push路由的组件
-    ViewController *viewController = [[ViewController alloc] init];
+    HomeViewController *viewController = [[HomeViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:tabBarController];
     
     //    UIViewController *controller01 = [[UIViewController alloc] init];

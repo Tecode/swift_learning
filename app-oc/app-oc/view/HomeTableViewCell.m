@@ -60,12 +60,16 @@
             self.rightImageView;
         })];
         
-        //        新增一个按钮
+        //        删除按钮
         [self.contentView addSubview:({
             self.deleteButton = [[UIButton alloc] initWithFrame:CGRectMake(240, 70, 50, 30)];
             self.deleteButton.backgroundColor = [UIColor redColor];
             [self.deleteButton setTitle:@"确定" forState:UIControlStateNormal];
             [self.deleteButton setTitle:@"取消" forState:UIControlStateHighlighted];
+            _deleteButton.layer.cornerRadius = 10;
+            _deleteButton.layer.masksToBounds = YES;
+            _deleteButton.layer.borderColor = [UIColor grayColor].CGColor;
+            _deleteButton.layer.borderWidth = 2;
             [self.deleteButton addTarget:self action:@selector(handleButtonClick) forControlEvents:UILayoutPriorityDefaultHigh];
             self.deleteButton;
         })];

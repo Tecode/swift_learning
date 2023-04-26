@@ -10,6 +10,10 @@
 NS_ASSUME_NONNULL_BEGIN
 @protocol HomeTableCellDelegate <NSObject>
 
+
+/// Delete方法 commond + option + /
+/// @param tableViewCell view
+/// @param deleteButton button
 - (void)homeTableViewCell: (UITableViewCell *) tableViewCell clickDeleteButton:(UIButton *)deleteButton;
 
 @end
