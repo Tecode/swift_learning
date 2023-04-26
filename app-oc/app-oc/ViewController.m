@@ -9,16 +9,21 @@
 #import "view/CustomView.h"
 #import "view/HomeTableViewCell.h"
 #import "controller/DetailViewController.h"
+#import "view/DeleteCellVIew.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
-
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate, HomeTableCellDelegate>
+@property (atomic, strong, readwrite) UITableView *tabelView;
+@property (atomic, strong, readwrite) NSMutableArray *listData;
 @end
 
 @implementation ViewController
 - (instancetype)init {
     self = [super init];
     if (self) {
-        
+        _listData = @[].mutableCopy;
+        for (int index = 0; index < 20; index++) {
+            [_listData addObject:@(index)];
+        }
     }
     NSLog(@"ViewController初始化");
     return  self;
@@ -86,10 +91,10 @@
     
     
     //    列表
-    UITableView *tableView = [[UITableView alloc] initWithFrame: self.view.bounds];
-    tableView.dataSource = self;
-    tableView.delegate = self;
-    [self.view addSubview:tableView];
+    _tabelView = [[UITableView alloc] initWithFrame: self.view.bounds];
+    _tabelView.dataSource = self;
+    _tabelView.delegate = self;
+    [self.view addSubview:_tabelView];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -99,7 +104,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 20;
+    return _listData.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -108,6 +113,7 @@
     HomeTableViewCell *tabViewCell = [tableView dequeueReusableCellWithIdentifier: @"id"];
     if (!tabViewCell){
         tabViewCell = [[HomeTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
+        tabViewCell.delegate = self;
     }
     [tabViewCell layoutTableViewCell];
     //    tabViewCell.textLabel.text = [NSString stringWithFormat:@"主标题%ld", indexPath.row + 1];
@@ -133,5 +139,15 @@
 //
 //    [self.navigationController pushViewController:viewControoler animated:YES];
 //}
-
+- (void)homeTableViewCell: (UITableViewCell *) tableViewCell clickDeleteButton:(UIButton *)deleteButton{
+    DeleteCellVIew *_deleteView = [[DeleteCellVIew alloc] initWithFrame: self.view.frame];
+    CGRect rect = [tableViewCell convertRect:deleteButton.frame fromView:nil];
+    __weak typeof(self) weekSelf = self;
+    [_deleteView showDeleteViewFromPoint:rect.origin clickBlock:^{
+        __strong typeof(self) strongSelf = weekSelf;
+        NSLog(@"关闭回调");
+        [strongSelf.listData removeLastObject];
+        [strongSelf.tabelView deleteRowsAtIndexPaths:@[[strongSelf.tabelView indexPathForCell:tableViewCell]] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }];
+}
 @end

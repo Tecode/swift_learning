@@ -104,7 +104,9 @@
 
 - (void) handleButtonClick
 {
-    NSLog(@"按钮被点击了");
+    if (self.delegate && [self.delegate respondsToSelector:@selector(homeTableViewCell:clickDeleteButton:)]){
+        [self.delegate homeTableViewCell:self clickDeleteButton:self.deleteButton];
+    }
 }
 
 @end

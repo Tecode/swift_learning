@@ -8,8 +8,16 @@
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
+@protocol HomeTableCellDelegate <NSObject>
+
+- (void)homeTableViewCell: (UITableViewCell *) tableViewCell clickDeleteButton:(UIButton *)deleteButton;
+
+@end
 
 @interface HomeTableViewCell : UITableViewCell
+
+@property (atomic, weak,readwrite) id<HomeTableCellDelegate> delegate;
+
 - (void) layoutTableViewCell;
 @end
 
