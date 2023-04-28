@@ -19,6 +19,7 @@
 		B670BB2B29F65DF60067F842 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B670BB2A29F65DF60067F842 /* HomeTableViewCell.m */; };
 		B670BB2E29F6B2E30067F842 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670BB2D29F6B2E30067F842 /* DetailViewController.m */; };
 		B6B8377129F530DE002E9018 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8377029F530DE002E9018 /* VideoViewController.m */; };
+		B6C19E7729F920750080BEC2 /* RequestMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C19E7629F920750080BEC2 /* RequestMethod.m */; };
 		B6D5D0D729F23914002F938F /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B6D5D0D629F23914002F938F /* icon.bundle */; };
 		B6ED7CEA29F7C5B8002DED73 /* DeleteCellVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ED7CE929F7C5B8002DED73 /* DeleteCellVIew.m */; };
 /* End PBXBuildFile section */
@@ -46,6 +47,8 @@
 		B670BB2D29F6B2E30067F842 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		B6B8376F29F530DE002E9018 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		B6B8377029F530DE002E9018 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		B6C19E7529F920750080BEC2 /* RequestMethod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RequestMethod.h; sourceTree = "<group>"; };
+		B6C19E7629F920750080BEC2 /* RequestMethod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RequestMethod.m; sourceTree = "<group>"; };
 		B6D5D0D629F23914002F938F /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = icon.bundle; path = "../../../../Downloads/geektime-ios-course-master/project/SampleApp/icon.bundle"; sourceTree = "<group>"; };
 		B6ED7CE829F7C5B8002DED73 /* DeleteCellVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellVIew.h; sourceTree = "<group>"; };
 		B6ED7CE929F7C5B8002DED73 /* DeleteCellVIew.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteCellVIew.m; sourceTree = "<group>"; };
@@ -81,6 +84,7 @@
 		B66F6F7E29F11DFC0097367F /* app-oc */ = {
 			isa = PBXGroup;
 			children = (
+				B6C19E7429F91E770080BEC2 /* loader */,
 				B6D5D0D629F23914002F938F /* icon.bundle */,
 				B66F6F9C29F12BCE0097367F /* controller */,
 				B66F6F9829F1279B0097367F /* view */,
@@ -123,6 +127,15 @@
 				B670BB2D29F6B2E30067F842 /* DetailViewController.m */,
 			);
 			path = controller;
+			sourceTree = "<group>";
+		};
+		B6C19E7429F91E770080BEC2 /* loader */ = {
+			isa = PBXGroup;
+			children = (
+				B6C19E7529F920750080BEC2 /* RequestMethod.h */,
+				B6C19E7629F920750080BEC2 /* RequestMethod.m */,
+			);
+			path = loader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +218,7 @@
 				B670BB2829F62E660067F842 /* RecommendeViewController.m in Sources */,
 				B66F6F8129F11DFC0097367F /* AppDelegate.m in Sources */,
 				B66F6F9229F11DFE0097367F /* main.m in Sources */,
+				B6C19E7729F920750080BEC2 /* RequestMethod.m in Sources */,
 				B66F6F8429F11DFC0097367F /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
