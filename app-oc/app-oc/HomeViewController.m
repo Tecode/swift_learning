@@ -10,6 +10,7 @@
 #import "view/HomeTableViewCell.h"
 #import "controller/DetailViewController.h"
 #import "view/DeleteCellVIew.h"
+#import "loader/RequestMethod.h"
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, HomeTableCellDelegate>
 @property (atomic, strong, readwrite) UITableView *tabelView;
@@ -58,6 +59,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+//    发送请求地址
+    RequestMethod *request = [[RequestMethod alloc] init];
+    [request requestListData];
     // Do any additional setup after loading the view.
     //    hello world
     //    [self.view addSubview:({
