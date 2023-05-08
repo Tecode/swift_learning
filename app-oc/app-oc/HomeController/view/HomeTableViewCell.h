@@ -6,6 +6,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@class ListItem;
 
 NS_ASSUME_NONNULL_BEGIN
 @protocol HomeTableCellDelegate <NSObject>
@@ -22,7 +23,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (atomic, weak,readwrite) id<HomeTableCellDelegate> delegate;
 
-- (void) layoutTableViewCell;
+- (void) layoutTableViewCellWithItem:(ListItem *)listItem;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -6,15 +6,16 @@
 //
 
 #import "HomeViewController.h"
-#import "view/CustomView.h"
-#import "view/HomeTableViewCell.h"
-#import "controller/DetailViewController.h"
-#import "view/DeleteCellVIew.h"
-#import "loader/RequestMethod.h"
+#import "../../view/CustomView.h"
+#import "../view/HomeTableViewCell.h"
+#import "../detail/controller/DetailViewController.h"
+#import "../view/DeleteCellVIew.h"
+#import "../model/ListLoader.h"
+#import "../model/ListItem.h"
 
 @interface HomeViewController ()<UITableViewDataSource, UITableViewDelegate, HomeTableCellDelegate>
 @property (atomic, strong, readwrite) UITableView *tabelView;
-@property (atomic, strong, readwrite) NSMutableArray *listData;
+@property (atomic, strong, readwrite) NSMutableArray<ListItem *> *listData;
 @end
 
 
@@ -24,10 +25,10 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        _listData = @[].mutableCopy;
-        for (int index = 0; index < 20; index++) {
-            [_listData addObject:@(index)];
-        }
+//        _listData = @[].mutableCopy;
+//        for (int index = 0; index < 20; index++) {
+//            [_listData addObject:@(index)];
+//        }
     }
     NSLog(@"ViewController初始化");
     return  self;
@@ -59,9 +60,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    发送请求地址
-    RequestMethod *request = [[RequestMethod alloc] init];
-    [request requestListData];
+    //    发送请求地址
+    ListLoader *request = [[ListLoader alloc] init];
+    //    避免循环引用
+    __weak typeof(self) wself = self;
+    [request requestListDataBlock:^(BOOL success, NSArray<ListItem *> *listData) {
+        if (success){
+            __strong typeof(wself) this = wself;
+            this.listData = (NSMutableArray<ListItem *> *) listData;
+            [this.tabelView reloadData];
+        }
+    }];
     // Do any additional setup after loading the view.
     //    hello world
     //    [self.view addSubview:({
@@ -123,7 +132,7 @@
         tabViewCell = [[HomeTableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"id"];
         tabViewCell.delegate = self;
     }
-    [tabViewCell layoutTableViewCell];
+    [tabViewCell layoutTableViewCellWithItem:[self.listData objectAtIndex:indexPath.row]];
     //    tabViewCell.textLabel.text = [NSString stringWithFormat:@"主标题%ld", indexPath.row + 1];
     //    tabViewCell.detailTextLabel.text = @"副标题";
     //    tabViewCell.imageView.image = [UIImage imageNamed:@"icon.bundle/video@2x.png"];
@@ -131,7 +140,8 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    DetailViewController *viewController = [[DetailViewController alloc] init];
+    ListItem *listItem = [self.listData objectAtIndex: indexPath.row];
+    DetailViewController *viewController = [[DetailViewController alloc] initWithUrl: listItem.url];
     viewController.view.backgroundColor = [UIColor whiteColor];
     viewController.navigationItem.title = [NSString stringWithFormat: @"%ld", indexPath.row];
     [self.navigationController pushViewController: viewController animated:YES];

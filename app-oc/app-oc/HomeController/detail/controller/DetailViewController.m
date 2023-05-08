@@ -19,11 +19,11 @@
     [self.webview removeObserver:self forKeyPath:@"estimatedProgress"];
 }
 
-- (instancetype)init
+- (instancetype)initWithUrl:(NSString *)url
 {
     self = [super init];
     if (self) {
-        
+        self.loadUrl = url;
     }
     return self;
 }
@@ -32,7 +32,7 @@
     [super viewDidLoad];
     [self.view addSubview:({
         self.webview = [[WKWebView alloc] initWithFrame:CGRectMake(0, 88, self.view.frame.size.width, self.view.frame.size.height)];
-        [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: @"https://www.baidu.com"]]];
+        [self.webview loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString: self.loadUrl]]];
         self.webview.navigationDelegate = self;
         [self.webview addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
         self.webview;
