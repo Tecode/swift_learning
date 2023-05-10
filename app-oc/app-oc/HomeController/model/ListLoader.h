@@ -17,6 +17,8 @@ NS_ASSUME_NONNULL_BEGIN
 /// 请求数据的方法
 - (void) requestListDataBlock:(ListLoaderFinishBlock)block;
 
+- (void) getSandBoxPath;
+
 @end
 
 NS_ASSUME_NONNULL_END

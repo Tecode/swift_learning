@@ -43,5 +43,42 @@
     //    }];
     //    开始执行任务
     //    [dataTask resume];
+    //    获取系统文件夹
+    [self getSandBoxPath];
 }
+
+- (void)getSandBoxPath
+{
+    NSArray *pathArray = NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES);
+    //    缓存的文件夹路径
+    NSString *cachePath = [pathArray firstObject];
+    NSFileManager *fileManager = [NSFileManager defaultManager];
+    //    创建文件夹路径
+    NSString *dataPath = [cachePath stringByAppendingPathComponent:@"haouxan"];
+    NSError *error;
+    //    创建文件夹
+    [fileManager createDirectoryAtPath:dataPath withIntermediateDirectories:YES attributes:nil error: &error];
+    //    二进制内容
+    NSData *fileData = [@"haoxuan" dataUsingEncoding:NSUTF8StringEncoding];
+    //    存储文件
+    NSString *filePath = [dataPath stringByAppendingPathComponent:@"data.txt"];
+    [fileManager createFileAtPath:filePath contents:fileData attributes:nil];
+    //    查询文件
+    BOOL exist = [fileManager fileExistsAtPath: filePath];
+    NSLog(@"%d", exist);
+    //    删除
+    if (exist) {
+        //        [fileManager removeItemAtPath:filePath error:nil];
+    }
+    NSFileHandle *fileHandle = [NSFileHandle fileHandleForWritingAtPath: filePath];
+    //    光标调整到末尾
+    [fileHandle seekToEndOfFile];
+    //    追加内容
+    [fileHandle writeData:[@"+ baby + baby mother" dataUsingEncoding:NSUTF8StringEncoding]];
+    //    同步文件内容
+    [fileHandle synchronizeFile];
+    //    关闭文件
+    [fileHandle closeFile];
+}
+
 @end

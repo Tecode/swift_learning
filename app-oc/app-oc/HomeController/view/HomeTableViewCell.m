@@ -96,7 +96,7 @@
     self.timeLabel.frame = CGRectMake(self.commentLabel.frame.origin.x + self.commentLabel.frame.size.width + 15, self.sourcelLabel.frame.origin.y, self.timeLabel.frame.size.width, self.timeLabel.frame.size.height);
     //    设置右侧图片
     //    self.rightImageView.image = [UIImage imageNamed:@"icon.bundle/icon.png"];
-    UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: @"http://dfzximg02.dftoutiao.com/minimodify/20230508/1200x625_6458995d719b5_mwpm_03201609.jpeg"]] ];
+    UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: listItem.thumbnailUrl]]];
     self.rightImageView.image = image;
 }
 
