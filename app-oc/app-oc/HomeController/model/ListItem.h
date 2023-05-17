@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface ListItem : NSObject
+@interface ListItem : NSObject<NSSecureCoding>
 @property (nonatomic, readwrite, copy) NSString *title;
 @property (nonatomic, readwrite, copy) NSString *category;
 @property (nonatomic, readwrite, copy) NSString *authorName;
