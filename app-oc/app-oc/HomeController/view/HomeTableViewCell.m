@@ -96,8 +96,31 @@
     self.timeLabel.frame = CGRectMake(self.commentLabel.frame.origin.x + self.commentLabel.frame.size.width + 15, self.sourcelLabel.frame.origin.y, self.timeLabel.frame.size.width, self.timeLabel.frame.size.height);
     //    设置右侧图片
     //    self.rightImageView.image = [UIImage imageNamed:@"icon.bundle/icon.png"];
-    UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: listItem.thumbnailUrl]]];
-    self.rightImageView.image = image;
+    //    主线线程会阻塞导致页面滑动卡顿
+    //    UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: listItem.thumbnailUrl]]];
+    //    self.rightImageView.image = image;
+    //    图片下载的任务放到子线程避免卡顿
+    //    if (@available(iOS 10.0, *)) {
+    //        NSThread *downloadThread = [[NSThread alloc] initWithBlock:^{
+    //            UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: listItem.thumbnailUrl]]];
+    //            self.rightImageView.image = image;
+    //        }];
+    //
+    //        downloadThread.name = @"downloadThread";
+    //        [downloadThread start];
+    //    } else {
+    //        // Fallback on earlier versions
+    //    }
+    dispatch_queue_global_t downloadQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
+    //    listItem.thumbnailUrl的图片地址不对，暂时换成了一个固定的网络地址
+    dispatch_async(downloadQueue, ^{
+        UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: @"https://img0.baidu.com/it/u=4162443464,2854908495&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1685984400&t=f90364c63f4a345d8048dc6e19f1f0da"]]];
+        //        回到主线程
+        dispatch_async(mainQueue, ^{
+            self.rightImageView.image = image;
+        });
+    });
 }
 
 - (void)awakeFromNib {
