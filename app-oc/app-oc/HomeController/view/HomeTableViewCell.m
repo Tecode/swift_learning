@@ -7,6 +7,7 @@
 
 #import "HomeTableViewCell.h"
 #import "../model/ListItem.h"
+#import "SDWebImage.h"
 
 @interface HomeTableViewCell ()
 
@@ -111,16 +112,21 @@
     //    } else {
     //        // Fallback on earlier versions
     //    }
-    dispatch_queue_global_t downloadQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
-    dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
-    //    listItem.thumbnailUrl的图片地址不对，暂时换成了一个固定的网络地址
-    dispatch_async(downloadQueue, ^{
-        UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: @"https://img0.baidu.com/it/u=4162443464,2854908495&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1685984400&t=f90364c63f4a345d8048dc6e19f1f0da"]]];
-        //        回到主线程
-        dispatch_async(mainQueue, ^{
-            self.rightImageView.image = image;
-        });
-    });
+    //    使用子线程进行加载
+    //    dispatch_queue_global_t downloadQueue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    //    dispatch_queue_main_t mainQueue = dispatch_get_main_queue();
+    //    //    listItem.thumbnailUrl的图片地址不对，暂时换成了一个固定的网络地址
+    //    dispatch_async(downloadQueue, ^{
+    //        UIImage *image = [UIImage imageWithData: [NSData dataWithContentsOfURL: [NSURL URLWithString: @"https://img0.baidu.com/it/u=4162443464,2854908495&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1685984400&t=f90364c63f4a345d8048dc6e19f1f0da"]]];
+    //        //        回到主线程
+    //        dispatch_async(mainQueue, ^{
+    //            self.rightImageView.image = image;
+    //        });
+    //    });
+    //    使用SDWebImage进行图片加载
+    [self.rightImageView sd_setImageWithURL: [NSURL URLWithString: @"https://img0.baidu.com/it/u=4162443464,2854908495&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1685984400&t=f90364c63f4a345d8048dc6e19f1f0da"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
+        NSLog(@"图片加载完成");
+    }];
 }
 
 - (void)awakeFromNib {
