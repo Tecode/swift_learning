@@ -7,7 +7,7 @@
 
 #import "SceneDelegate.h"
 #import "HomeViewController.h"
-#import "controller/VideoViewController.h"
+#import "VideoController/VideoViewController.h"
 #import "controller/RecommendeViewController.h"
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>

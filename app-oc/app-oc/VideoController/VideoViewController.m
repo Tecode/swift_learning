@@ -6,6 +6,7 @@
 //
 
 #import "VideoViewController.h"
+#import "VideoCoverCollectionViewCell.h"
 
 @interface VideoViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -30,12 +31,12 @@
     //    Layout布局
     layout.minimumLineSpacing = 10;
     layout.minimumInteritemSpacing = 10;
-    layout.itemSize = CGSizeMake((self.view.frame.size.width - 10) / 2, 300);
+    layout.itemSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width / 16*9);
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     collectionView.delegate = self;
     collectionView.dataSource = self;
     
-    [collectionView registerClass: [UICollectionViewCell class] forCellWithReuseIdentifier:@"UICollectionView"];
+    [collectionView registerClass: [VideoCoverCollectionViewCell class] forCellWithReuseIdentifier:@"VideoCoverCollectionViewCell"];
     
     [self.view addSubview:collectionView];
 }
@@ -46,19 +47,22 @@
 
 - (__kindof UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"UICollectionView" forIndexPath:indexPath];
-//    if (!cell) {
-//        cell = [[UICollectionViewCell alloc] init];
-//    }
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"VideoCoverCollectionViewCell" forIndexPath:indexPath];
+    //    if (!cell) {
+    //        cell = [[UICollectionViewCell alloc] init];
+    //    }
+    if ([cell isKindOfClass: [VideoCoverCollectionViewCell class]]) {
+        [(VideoCoverCollectionViewCell *)cell layoutWithVideoCoverUrl:@"icon.bundle/cover@3x.png" videoUrl:@"https://video.pearvideo.com/mp4/adshort/20181013/cont-1454190-12191519-122933_adpkg-ad_hd.mp4"];
+    }
     cell.backgroundColor = [UIColor redColor];
     return cell;
 }
 
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row %3 == 0) {
-        return CGSizeMake(self.view.frame.size.width, 200);
-    }
-    return CGSizeMake((self.view.frame.size.width - 10) / 2, 300);
+    //    if (indexPath.row %3 == 0) {
+    //        return CGSizeMake(self.view.frame.size.width, 200);
+    //    }
+    return CGSizeMake(self.view.bounds.size.width , self.view.bounds.size.width/16*9);
 }
 
 @end
