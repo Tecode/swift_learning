@@ -7,6 +7,7 @@
 
 #import "VideoViewController.h"
 #import "VideoCoverCollectionViewCell.h"
+#import "VideoToolbar.h"
 
 @interface VideoViewController ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
@@ -31,7 +32,7 @@
     //    Layout布局
     layout.minimumLineSpacing = 10;
     layout.minimumInteritemSpacing = 10;
-    layout.itemSize = CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.width / 16*9);
+    layout.itemSize = CGSizeMake(self.view.frame.size.width, (self.view.frame.size.width / 16*9) + VideoToolbarHeight);
     UICollectionView *collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout];
     collectionView.delegate = self;
     collectionView.dataSource = self;
@@ -62,7 +63,7 @@
     //    if (indexPath.row %3 == 0) {
     //        return CGSizeMake(self.view.frame.size.width, 200);
     //    }
-    return CGSizeMake(self.view.bounds.size.width , self.view.bounds.size.width/16*9);
+    return CGSizeMake(self.view.bounds.size.width , self.view.bounds.size.width/16*9 + VideoToolbarHeight);
 }
 
 @end

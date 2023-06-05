@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		B60614B32A2C7CC900128A39 /* VideoCoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60614B22A2C7CC900128A39 /* VideoCoverCollectionViewCell.m */; };
 		B60614B52A2C881000128A39 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60614B42A2C881000128A39 /* icon.bundle */; };
+		B66C95A02A2D8A7A00EF54F9 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B66C959F2A2D8A7A00EF54F9 /* VideoPlayer.m */; };
+		B66C95A32A2DE68A00EF54F9 /* VideoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B66C95A22A2DE68A00EF54F9 /* VideoToolbar.m */; };
 		B66F6F8129F11DFC0097367F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F8029F11DFC0097367F /* AppDelegate.m */; };
 		B66F6F8429F11DFC0097367F /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F8329F11DFC0097367F /* SceneDelegate.m */; };
 		B66F6F8729F11DFC0097367F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F8629F11DFC0097367F /* HomeViewController.m */; };
@@ -34,6 +36,10 @@
 		B60614B12A2C7CC900128A39 /* VideoCoverCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCoverCollectionViewCell.h; sourceTree = "<group>"; };
 		B60614B22A2C7CC900128A39 /* VideoCoverCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCoverCollectionViewCell.m; sourceTree = "<group>"; };
 		B60614B42A2C881000128A39 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		B66C959E2A2D8A7A00EF54F9 /* VideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
+		B66C959F2A2D8A7A00EF54F9 /* VideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
+		B66C95A12A2DE68A00EF54F9 /* VideoToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolbar.h; sourceTree = "<group>"; };
+		B66C95A22A2DE68A00EF54F9 /* VideoToolbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoToolbar.m; sourceTree = "<group>"; };
 		B66F6F7C29F11DFC0097367F /* app-oc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "app-oc.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B66F6F7F29F11DFC0097367F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B66F6F8029F11DFC0097367F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -100,6 +106,10 @@
 				B6B8377029F530DE002E9018 /* VideoViewController.m */,
 				B60614B12A2C7CC900128A39 /* VideoCoverCollectionViewCell.h */,
 				B60614B22A2C7CC900128A39 /* VideoCoverCollectionViewCell.m */,
+				B66C959E2A2D8A7A00EF54F9 /* VideoPlayer.h */,
+				B66C959F2A2D8A7A00EF54F9 /* VideoPlayer.m */,
+				B66C95A12A2DE68A00EF54F9 /* VideoToolbar.h */,
+				B66C95A22A2DE68A00EF54F9 /* VideoToolbar.m */,
 			);
 			path = VideoController;
 			sourceTree = "<group>";
@@ -325,11 +335,13 @@
 				B670BB2B29F65DF60067F842 /* HomeTableViewCell.m in Sources */,
 				B6B8377129F530DE002E9018 /* VideoViewController.m in Sources */,
 				B6ED7CEA29F7C5B8002DED73 /* DeleteCellVIew.m in Sources */,
+				B66C95A02A2D8A7A00EF54F9 /* VideoPlayer.m in Sources */,
 				B670BB2829F62E660067F842 /* RecommendeViewController.m in Sources */,
 				B66F6F8129F11DFC0097367F /* AppDelegate.m in Sources */,
 				B66F6F9229F11DFE0097367F /* main.m in Sources */,
 				B66F6F8429F11DFC0097367F /* SceneDelegate.m in Sources */,
 				B60614B32A2C7CC900128A39 /* VideoCoverCollectionViewCell.m in Sources */,
+				B66C95A32A2DE68A00EF54F9 /* VideoToolbar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
