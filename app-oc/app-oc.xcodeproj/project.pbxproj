@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		B60614B32A2C7CC900128A39 /* VideoCoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60614B22A2C7CC900128A39 /* VideoCoverCollectionViewCell.m */; };
 		B60614B52A2C881000128A39 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60614B42A2C881000128A39 /* icon.bundle */; };
+		B62220622A31DCC80078AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62220602A31DCC80078AA3A /* LaunchScreen.storyboard */; };
 		B644DF202A30BE1200EBCBEB /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B644DF1F2A30BE1200EBCBEB /* Adapter.m */; };
+		B64F6D9B2A31D6E100942148 /* app-oc.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = B64F6D9A2A31D6E100942148 /* app-oc.xcodeproj */; };
 		B66C95A02A2D8A7A00EF54F9 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B66C959F2A2D8A7A00EF54F9 /* VideoPlayer.m */; };
 		B66C95A32A2DE68A00EF54F9 /* VideoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = B66C95A22A2DE68A00EF54F9 /* VideoToolbar.m */; };
 		B66F6F8129F11DFC0097367F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F8029F11DFC0097367F /* AppDelegate.m */; };
@@ -17,7 +19,6 @@
 		B66F6F8729F11DFC0097367F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F8629F11DFC0097367F /* HomeViewController.m */; };
 		B66F6F8A29F11DFC0097367F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F6F8829F11DFC0097367F /* Main.storyboard */; };
 		B66F6F8C29F11DFE0097367F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B66F6F8B29F11DFE0097367F /* Assets.xcassets */; };
-		B66F6F8F29F11DFE0097367F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B66F6F8D29F11DFE0097367F /* LaunchScreen.storyboard */; };
 		B66F6F9229F11DFE0097367F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F9129F11DFE0097367F /* main.m */; };
 		B66F6F9B29F128010097367F /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = B66F6F9A29F128010097367F /* CustomView.m */; };
 		B670BB2829F62E660067F842 /* RecommendeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670BB2729F62E660067F842 /* RecommendeViewController.m */; };
@@ -37,8 +38,10 @@
 		B60614B12A2C7CC900128A39 /* VideoCoverCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoCoverCollectionViewCell.h; sourceTree = "<group>"; };
 		B60614B22A2C7CC900128A39 /* VideoCoverCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCoverCollectionViewCell.m; sourceTree = "<group>"; };
 		B60614B42A2C881000128A39 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
+		B62220612A31DCC80078AA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B644DF1E2A30BE1200EBCBEB /* Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
 		B644DF1F2A30BE1200EBCBEB /* Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
+		B64F6D9A2A31D6E100942148 /* app-oc.xcodeproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "wrapper.pb-project"; name = "app-oc.xcodeproj"; path = "../app-oc.xcodeproj"; sourceTree = "<group>"; };
 		B66C959E2A2D8A7A00EF54F9 /* VideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
 		B66C959F2A2D8A7A00EF54F9 /* VideoPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
 		B66C95A12A2DE68A00EF54F9 /* VideoToolbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoToolbar.h; sourceTree = "<group>"; };
@@ -52,7 +55,6 @@
 		B66F6F8629F11DFC0097367F /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		B66F6F8929F11DFC0097367F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B66F6F8B29F11DFE0097367F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B66F6F8E29F11DFE0097367F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B66F6F9029F11DFE0097367F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B66F6F9129F11DFE0097367F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		B66F6F9929F128010097367F /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
@@ -117,6 +119,11 @@
 			path = VideoController;
 			sourceTree = "<group>";
 		};
+		B622205E2A31DC9E0078AA3A /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		B644DF1D2A30BD8C00EBCBEB /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,10 +163,11 @@
 				B66F6F7F29F11DFC0097367F /* AppDelegate.h */,
 				B66F6F8029F11DFC0097367F /* AppDelegate.m */,
 				B66F6F8229F11DFC0097367F /* SceneDelegate.h */,
+				B62220602A31DCC80078AA3A /* LaunchScreen.storyboard */,
 				B66F6F8329F11DFC0097367F /* SceneDelegate.m */,
 				B66F6F8829F11DFC0097367F /* Main.storyboard */,
+				B64F6D9A2A31D6E100942148 /* app-oc.xcodeproj */,
 				B66F6F8B29F11DFE0097367F /* Assets.xcassets */,
-				B66F6F8D29F11DFE0097367F /* LaunchScreen.storyboard */,
 				B66F6F9029F11DFE0097367F /* Info.plist */,
 				B66F6F9129F11DFE0097367F /* main.m */,
 			);
@@ -289,6 +297,12 @@
 			mainGroup = B66F6F7329F11DFC0097367F;
 			productRefGroup = B66F6F7D29F11DFC0097367F /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B622205E2A31DC9E0078AA3A /* Products */;
+					ProjectRef = B64F6D9A2A31D6E100942148 /* app-oc.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B66F6F7B29F11DFC0097367F /* app-oc */,
@@ -302,8 +316,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B60614B52A2C881000128A39 /* icon.bundle in Resources */,
-				B66F6F8F29F11DFE0097367F /* LaunchScreen.storyboard in Resources */,
+				B64F6D9B2A31D6E100942148 /* app-oc.xcodeproj in Resources */,
 				B66F6F8C29F11DFE0097367F /* Assets.xcassets in Resources */,
+				B62220622A31DCC80078AA3A /* LaunchScreen.storyboard in Resources */,
 				B66F6F8A29F11DFC0097367F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -362,20 +377,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		B62220602A31DCC80078AA3A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B62220612A31DCC80078AA3A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
 		B66F6F8829F11DFC0097367F /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B66F6F8929F11DFC0097367F /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		B66F6F8D29F11DFE0097367F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B66F6F8E29F11DFE0097367F /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -499,6 +514,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -526,6 +542,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;

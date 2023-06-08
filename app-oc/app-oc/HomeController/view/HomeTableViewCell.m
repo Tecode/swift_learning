@@ -123,6 +123,8 @@
     //            self.rightImageView.image = image;
     //        });
     //    });
+    // 根据屏幕尺寸自适应图片尺寸
+    __unused UIImage *searchIcon = [UIImage imageNamed: @"SearchIcon"];
     //    使用SDWebImage进行图片加载
     [self.rightImageView sd_setImageWithURL: [NSURL URLWithString: @"https://img0.baidu.com/it/u=4162443464,2854908495&fm=253&app=138&size=w931&n=0&f=JPEG&fmt=auto?sec=1685984400&t=f90364c63f4a345d8048dc6e19f1f0da"] completed:^(UIImage * _Nullable image, NSError * _Nullable error, SDImageCacheType cacheType, NSURL * _Nullable imageURL) {
         NSLog(@"图片加载完成");
