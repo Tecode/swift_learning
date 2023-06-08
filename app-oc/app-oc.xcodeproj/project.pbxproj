@@ -10,6 +10,7 @@
 		B60614B32A2C7CC900128A39 /* VideoCoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60614B22A2C7CC900128A39 /* VideoCoverCollectionViewCell.m */; };
 		B60614B52A2C881000128A39 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60614B42A2C881000128A39 /* icon.bundle */; };
 		B62220622A31DCC80078AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62220602A31DCC80078AA3A /* LaunchScreen.storyboard */; };
+		B62F9B2F2A31F1B7005595B8 /* SplashView.m in Sources */ = {isa = PBXBuildFile; fileRef = B62F9B2E2A31F1B7005595B8 /* SplashView.m */; };
 		B644DF202A30BE1200EBCBEB /* Adapter.m in Sources */ = {isa = PBXBuildFile; fileRef = B644DF1F2A30BE1200EBCBEB /* Adapter.m */; };
 		B64F6D9B2A31D6E100942148 /* app-oc.xcodeproj in Resources */ = {isa = PBXBuildFile; fileRef = B64F6D9A2A31D6E100942148 /* app-oc.xcodeproj */; };
 		B66C95A02A2D8A7A00EF54F9 /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = B66C959F2A2D8A7A00EF54F9 /* VideoPlayer.m */; };
@@ -39,6 +40,8 @@
 		B60614B22A2C7CC900128A39 /* VideoCoverCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoCoverCollectionViewCell.m; sourceTree = "<group>"; };
 		B60614B42A2C881000128A39 /* icon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = icon.bundle; sourceTree = "<group>"; };
 		B62220612A31DCC80078AA3A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B62F9B2D2A31F1B7005595B8 /* SplashView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashView.h; sourceTree = "<group>"; };
+		B62F9B2E2A31F1B7005595B8 /* SplashView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashView.m; sourceTree = "<group>"; };
 		B644DF1E2A30BE1200EBCBEB /* Adapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Adapter.h; sourceTree = "<group>"; };
 		B644DF1F2A30BE1200EBCBEB /* Adapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adapter.m; sourceTree = "<group>"; };
 		B64F6D9A2A31D6E100942148 /* app-oc.xcodeproj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "wrapper.pb-project"; name = "app-oc.xcodeproj"; path = "../app-oc.xcodeproj"; sourceTree = "<group>"; };
@@ -179,6 +182,8 @@
 			children = (
 				B66F6F9929F128010097367F /* CustomView.h */,
 				B66F6F9A29F128010097367F /* CustomView.m */,
+				B62F9B2D2A31F1B7005595B8 /* SplashView.h */,
+				B62F9B2E2A31F1B7005595B8 /* SplashView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -371,6 +376,7 @@
 				B66F6F8429F11DFC0097367F /* SceneDelegate.m in Sources */,
 				B60614B32A2C7CC900128A39 /* VideoCoverCollectionViewCell.m in Sources */,
 				B66C95A32A2DE68A00EF54F9 /* VideoToolbar.m in Sources */,
+				B62F9B2F2A31F1B7005595B8 /* SplashView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

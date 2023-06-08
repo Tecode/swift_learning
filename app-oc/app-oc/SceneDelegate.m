@@ -9,6 +9,8 @@
 #import "HomeViewController.h"
 #import "VideoController/VideoViewController.h"
 #import "controller/RecommendeViewController.h"
+#import "view/SplashView.h"
+
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
 
@@ -56,6 +58,11 @@
     
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+    //    添加业务的闪屏
+    [self.window addSubview:({
+        SplashView *_splashVIew = [[SplashView alloc] initWithFrame:self.window.bounds];
+        _splashVIew;
+    })];
 }
 
 //    tabBar切换时触发
