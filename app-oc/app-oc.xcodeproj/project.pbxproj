@@ -28,9 +28,9 @@
 		B670BB2E29F6B2E30067F842 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B670BB2D29F6B2E30067F842 /* DetailViewController.m */; };
 		B67DEE0C2A05FB9E00E69DBA /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DEE0B2A05FB9E00E69DBA /* ListLoader.m */; };
 		B67DEE0F2A05FBCF00E69DBA /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DEE0E2A05FBCF00E69DBA /* ListItem.m */; };
+		B68C886A2A333FB900F61323 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C88692A333FB900F61323 /* Location.m */; };
 		B6B8377129F530DE002E9018 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8377029F530DE002E9018 /* VideoViewController.m */; };
 		B6ED7CEA29F7C5B8002DED73 /* DeleteCellVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ED7CE929F7C5B8002DED73 /* DeleteCellVIew.m */; };
-		E58C24A788AD90DAD6E0E658 /* libPods-app-oc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA27C390C3F4A28C82EF306 /* libPods-app-oc.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +73,8 @@
 		B67DEE0B2A05FB9E00E69DBA /* ListLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListLoader.m; sourceTree = "<group>"; };
 		B67DEE0D2A05FBCF00E69DBA /* ListItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListItem.h; sourceTree = "<group>"; };
 		B67DEE0E2A05FBCF00E69DBA /* ListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
+		B68C88682A333FB900F61323 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		B68C88692A333FB900F61323 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
 		B6B8376F29F530DE002E9018 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		B6B8377029F530DE002E9018 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		B6ED7CE829F7C5B8002DED73 /* DeleteCellVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellVIew.h; sourceTree = "<group>"; };
@@ -174,6 +176,8 @@
 				B66F6F8B29F11DFE0097367F /* Assets.xcassets */,
 				B66F6F9029F11DFE0097367F /* Info.plist */,
 				B66F6F9129F11DFE0097367F /* main.m */,
+				B68C88682A333FB900F61323 /* Location.h */,
+				B68C88692A333FB900F61323 /* Location.m */,
 			);
 			path = "app-oc";
 			sourceTree = "<group>";
@@ -365,6 +369,7 @@
 				B66F6F8729F11DFC0097367F /* HomeViewController.m in Sources */,
 				B67DEE0F2A05FBCF00E69DBA /* ListItem.m in Sources */,
 				B67DEE0C2A05FB9E00E69DBA /* ListLoader.m in Sources */,
+				B68C886A2A333FB900F61323 /* Location.m in Sources */,
 				B670BB2E29F6B2E30067F842 /* DetailViewController.m in Sources */,
 				B644DF202A30BE1200EBCBEB /* Adapter.m in Sources */,
 				B670BB2B29F65DF60067F842 /* HomeTableViewCell.m in Sources */,

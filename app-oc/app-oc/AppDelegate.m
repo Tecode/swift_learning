@@ -7,6 +7,7 @@
 
 #import "AppDelegate.h"
 #import "HomeViewController.h"
+#import "Location.h"
 
 @interface AppDelegate ()
 
@@ -20,6 +21,7 @@
     //    UIWindow *window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     //    window.rootViewController = [[ViewController alloc] init];
     //    [window makeKeyAndVisible];
+    [[Location locationManager] checkLocationAuthorization];
     return YES;
 }
 
