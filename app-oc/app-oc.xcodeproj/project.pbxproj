@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A69C8F843A18D15DB90869A5 /* libPods-app-oc.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AA27C390C3F4A28C82EF306 /* libPods-app-oc.a */; };
 		B60614B32A2C7CC900128A39 /* VideoCoverCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B60614B22A2C7CC900128A39 /* VideoCoverCollectionViewCell.m */; };
 		B60614B52A2C881000128A39 /* icon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = B60614B42A2C881000128A39 /* icon.bundle */; };
 		B62220622A31DCC80078AA3A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B62220602A31DCC80078AA3A /* LaunchScreen.storyboard */; };
@@ -83,7 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E58C24A788AD90DAD6E0E658 /* libPods-app-oc.a in Frameworks */,
+				A69C8F843A18D15DB90869A5 /* libPods-app-oc.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
