@@ -49,11 +49,22 @@
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status
 {
     if (status == kCLAuthorizationStatusAuthorizedWhenInUse) {
-        
+        [self.manager startUpdatingLocation];
     } else if (status == kCLAuthorizationStatusDenied)
     {
         
     }
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
+{
+    CLLocation *location = [locations firstObject];
+    CLGeocoder *coder = [[CLGeocoder alloc] init];
+    [coder reverseGeocodeLocation:location completionHandler:^(NSArray<CLPlacemark *> * _Nullable placemarks, NSError * _Nullable error) {
+        //        地标信息
+    }];
+    [self.manager stopUpdatingLocation];
+    NSLog(@"");
 }
 
 @end
