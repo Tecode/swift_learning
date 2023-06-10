@@ -9,6 +9,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+// App定位管理
+
 @interface Location : NSObject
 + (Location *) locationManager;
 - (void) checkLocationAuthorization;

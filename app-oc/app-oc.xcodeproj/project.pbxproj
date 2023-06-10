@@ -29,6 +29,7 @@
 		B67DEE0C2A05FB9E00E69DBA /* ListLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DEE0B2A05FB9E00E69DBA /* ListLoader.m */; };
 		B67DEE0F2A05FBCF00E69DBA /* ListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = B67DEE0E2A05FBCF00E69DBA /* ListItem.m */; };
 		B68C886A2A333FB900F61323 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C88692A333FB900F61323 /* Location.m */; };
+		B68C886D2A34AE5000F61323 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = B68C886C2A34AE5000F61323 /* Notification.m */; };
 		B6B8377129F530DE002E9018 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6B8377029F530DE002E9018 /* VideoViewController.m */; };
 		B6ED7CEA29F7C5B8002DED73 /* DeleteCellVIew.m in Sources */ = {isa = PBXBuildFile; fileRef = B6ED7CE929F7C5B8002DED73 /* DeleteCellVIew.m */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,8 @@
 		B67DEE0E2A05FBCF00E69DBA /* ListItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ListItem.m; sourceTree = "<group>"; };
 		B68C88682A333FB900F61323 /* Location.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
 		B68C88692A333FB900F61323 /* Location.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		B68C886B2A34AE5000F61323 /* Notification.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		B68C886C2A34AE5000F61323 /* Notification.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
 		B6B8376F29F530DE002E9018 /* VideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
 		B6B8377029F530DE002E9018 /* VideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
 		B6ED7CE829F7C5B8002DED73 /* DeleteCellVIew.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteCellVIew.h; sourceTree = "<group>"; };
@@ -178,6 +181,8 @@
 				B66F6F9129F11DFE0097367F /* main.m */,
 				B68C88682A333FB900F61323 /* Location.h */,
 				B68C88692A333FB900F61323 /* Location.m */,
+				B68C886B2A34AE5000F61323 /* Notification.h */,
+				B68C886C2A34AE5000F61323 /* Notification.m */,
 			);
 			path = "app-oc";
 			sourceTree = "<group>";
@@ -365,6 +370,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B68C886D2A34AE5000F61323 /* Notification.m in Sources */,
 				B66F6F9B29F128010097367F /* CustomView.m in Sources */,
 				B66F6F8729F11DFC0097367F /* HomeViewController.m in Sources */,
 				B67DEE0F2A05FBCF00E69DBA /* ListItem.m in Sources */,
@@ -529,6 +535,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5SWKJ8BFL5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "app-oc/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -557,6 +564,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5SWKJ8BFL5;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "app-oc/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

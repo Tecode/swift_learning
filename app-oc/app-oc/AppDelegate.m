@@ -8,6 +8,7 @@
 #import "AppDelegate.h"
 #import "HomeViewController.h"
 #import "Location.h"
+#import "Notification.h"
 
 @interface AppDelegate ()
 
@@ -21,7 +22,10 @@
     //    UIWindow *window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     //    window.rootViewController = [[ViewController alloc] init];
     //    [window makeKeyAndVisible];
+    //    检查定位权限
     [[Location locationManager] checkLocationAuthorization];
+    //    检查通知权限
+    [[Notification notificationManager] checkNotificationAuthorization];
     return YES;
 }
 
@@ -73,6 +77,20 @@
     // Called when the user discards a scene session.
     // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
     // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+}
+
+#pragma mark - PUSH
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken{
+    //尽量收敛到GTNotification中实现
+    //注册成功
+    NSLog(@"token %@", deviceToken);
+}
+
+- (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
+    //注册失败
+    //    remote notifications are not supported in the simulator
+    NSLog(@"注册失败 %@", error);
 }
 
 #pragma mark - URL SCHEME iOS9
