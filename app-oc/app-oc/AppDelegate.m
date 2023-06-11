@@ -101,4 +101,19 @@
     return YES;
 }
 
+#pragma mark - CHANGE ICON
+
+- (void)_changeIcon{
+    //动态更换图标
+    if (@available(iOS 10.3, *)) {
+        if ([UIApplication sharedApplication].supportsAlternateIcons) {
+            [[UIApplication sharedApplication] setAlternateIconName:@"ICONBLACK" completionHandler:^(NSError * _Nullable error) {
+                //回调
+            }];
+        }
+    } else {
+        // Fallback on earlier versions
+    }
+}
+
 @end

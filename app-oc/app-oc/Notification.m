@@ -74,7 +74,8 @@ API_AVAILABLE(ios(10.0)){
 
 - (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)(void))completionHandler
 {
-    [_content setBadge: @(0)];
+    //    设置应用角标数字为0
+    [[UIApplication sharedApplication] setApplicationIconBadgeNumber: 0];
     //    处理业务逻辑
     completionHandler();
 }
