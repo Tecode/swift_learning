@@ -1,3 +1,5 @@
 target 'app-oc' do
 	pod 'AFNetworking'
+  pod 'SDWebImage'
+#  pod 'CocoaLumberjack'
 end

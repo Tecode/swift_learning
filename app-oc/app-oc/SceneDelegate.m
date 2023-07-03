@@ -7,8 +7,10 @@
 
 #import "SceneDelegate.h"
 #import "HomeViewController.h"
-#import "controller/VideoViewController.h"
+#import "VideoController/VideoViewController.h"
 #import "controller/RecommendeViewController.h"
+#import "view/SplashView.h"
+
 
 @interface SceneDelegate ()<UITabBarControllerDelegate>
 
@@ -56,6 +58,11 @@
     
     self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+    //    添加业务的闪屏
+    [self.window addSubview:({
+        SplashView *_splashVIew = [[SplashView alloc] initWithFrame:self.window.bounds];
+        _splashVIew;
+    })];
 }
 
 //    tabBar切换时触发
@@ -66,7 +73,7 @@
 }
 
 
-- (void)sceneDidDisconnect:(UIScene *)scene {
+- (void)sceneDidDisconnect:(UIScene *)scene  API_AVAILABLE(ios(13.0)){
     // Called as the scene is being released by the system.
     // This occurs shortly after the scene enters the background, or when its session is discarded.
     // Release any resources associated with this scene that can be re-created the next time the scene connects.
@@ -74,29 +81,37 @@
 }
 
 
-- (void)sceneDidBecomeActive:(UIScene *)scene {
+- (void)sceneDidBecomeActive:(UIScene *)scene  API_AVAILABLE(ios(13.0)){
     // Called when the scene has moved from an inactive state to an active state.
     // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
 }
 
 
-- (void)sceneWillResignActive:(UIScene *)scene {
+- (void)sceneWillResignActive:(UIScene *)scene  API_AVAILABLE(ios(13.0)){
     // Called when the scene will move from an active state to an inactive state.
     // This may occur due to temporary interruptions (ex. an incoming phone call).
 }
 
 
-- (void)sceneWillEnterForeground:(UIScene *)scene {
+- (void)sceneWillEnterForeground:(UIScene *)scene  API_AVAILABLE(ios(13.0)){
     // Called as the scene transitions from the background to the foreground.
     // Use this method to undo the changes made on entering the background.
 }
 
 
-- (void)sceneDidEnterBackground:(UIScene *)scene {
+- (void)sceneDidEnterBackground:(UIScene *)scene  API_AVAILABLE(ios(13.0)){
     // Called as the scene transitions from the foreground to the background.
     // Use this method to save data, release shared resources, and store enough scene-specific state information
     // to restore the scene back to its current state.
 }
 
+#pragma mark - URL SCHEME IOS13
+
+- (void)scene:(UIScene *)scene openURLContexts:(NSSet<UIOpenURLContext *> *)URLContexts
+API_AVAILABLE(ios(13.0)){
+    for (UIOpenURLContext *context in URLContexts) {
+        __unused NSURL *url = context.URL;
+        // 在这里处理打开应用程序的 URL
+    }}
 
 @end
